@@ -14,8 +14,10 @@ Repository URL: https://github.com/joshdrobert/cal.git
 ## Files
 
 - `index.html` - dashboard shell.
+- `calendar.html` - calendar-style page with M0/M1/M2/M3/M4 chips.
 - `styles.css` - presentation and mobile layout.
 - `app.js` - client-side data loading, filters, search, and filtered ICS download.
+- `calendar.js` - calendar-style grouped events view.
 - `events.json` - mirrored source feed.
 - `calendar.ics` - generated subscription calendar.
 - `scripts/update-calendar.js` - Node script used by GitHub Actions.
@@ -71,6 +73,8 @@ The dashboard filters by:
 - mandatory status
 - group
 - search across title, desc, info, presenter, and location
+
+The calendar page adds prominent chips for M0, M1, M2, M3, M4, M5, and M6, and groups results by date like the attached calendar view.
 
 The page keeps filter state in the URL, so filtered views can be shared directly.
 

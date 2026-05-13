@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>EnMed Calendar View</title>
+    <meta
+      name="description"
+      content="Filterable calendar-style view for the mirrored EnMed PCT events feed."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="calendar-page">
+    <div class="page-shell calendar-shell">
+      <nav class="top-nav" aria-label="Primary">
+        <a href="index.html" class="top-nav-link">Dashboard</a>
+        <a href="calendar.html" class="top-nav-link is-active">Calendar view</a>
+      </nav>
+
+      <header class="calendar-hero">
+        <div>
+          <p class="eyebrow">EnMed Calendar</p>
+          <h1>Browse the feed by mCal, date, and search.</h1>
+          <p class="lede">
+            Use the chips to focus on M0, M1, M2, M3, M4, or show everything. The page groups
+            events chronologically and keeps the ICS subscription URL visible for easy sharing.
+          </p>
+        </div>
+
+        <aside class="calendar-subscribe-card">
+          <p class="eyebrow">Subscribe</p>
+          <h2>Google Calendar feed</h2>
+          <p class="subtle">Use the GitHub Pages ICS URL below for a live subscription.</p>
+          <div class="url-row">
+            <input id="icsUrl" type="text" readonly aria-label="ICS subscription URL" />
+            <button id="copyIcsUrl" type="button">Copy URL</button>
+          </div>
+          <p class="url-hint">Google Calendar → Other calendars + → From URL → paste the ICS URL.</p>
+          <p class="url-hint"><a href="index.html">Open the dashboard list and filter panel.</a></p>
+        </aside>
+      </header>
+
+      <section class="calendar-toolbar" aria-label="Calendar filters">
+        <div class="toolbar-row">
+          <label class="search-field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Title, desc, info, presenter, location" />
+          </label>
+          <button id="resetFilters" type="button" class="ghost-button">Reset</button>
+        </div>
+
+        <div class="chip-filters" id="mCalChips" role="tablist" aria-label="mCal filters"></div>
+
+        <div class="small-filters">
+          <label>
+            <span>Category</span>
+            <select id="categoryFilter"></select>
+          </label>
+          <label>
+            <span>Block</span>
+            <select id="blockFilter"></select>
+          </label>
+          <label>
+            <span>Mandatory</span>
+            <select id="mandFilter"></select>
+          </label>
+          <label>
+            <span>Group</span>
+            <select id="groupFilter"></select>
+          </label>
+        </div>
+      </section>
+
+      <section class="calendar-stats" aria-label="Calendar summary">
+        <article>
+          <strong id="eventCount">0</strong>
+          <span>Events</span>
+        </article>
+        <article>
+          <strong id="upcomingCount">0</strong>
+          <span>Upcoming</span>
+        </article>
+        <article>
+          <strong id="activeMCal">All</strong>
+          <span>mCal</span>
+        </article>
+        <article>
+          <strong id="lastUpdated">--</strong>
+          <span>Last updated</span>
+        </article>
+      </section>
+
+      <section class="calendar-board">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow">Events</p>
+            <h2>Chronological calendar view</h2>
+          </div>
+          <p id="resultSummary" class="subtle"></p>
+        </div>
+        <div id="eventList" class="calendar-group-list" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <template id="eventTemplate">
+      <article class="calendar-event-card">
+        <div class="calendar-event-header">
+          <div>
+            <p class="calendar-event-date"></p>
+            <h3 class="calendar-event-title"></h3>
+          </div>
+          <span class="calendar-event-badge"></span>
+        </div>
+        <p class="calendar-event-time"></p>
+        <p class="calendar-event-meta"></p>
+        <p class="calendar-event-desc"></p>
+        <dl class="calendar-event-fields"></dl>
+      </article>
+    </template>
+
+    <script src="calendar.js"></script>
+  </body>
+</html>

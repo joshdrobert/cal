@@ -32,7 +32,7 @@ jobs:
         run: |
           rm -rf site
           mkdir -p site
-          cp index.html styles.css app.js events.json calendar.ics site/
+          cp index.html calendar.html styles.css app.js calendar.js events.json calendar.ics site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
