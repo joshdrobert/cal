@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>EnMed Calendar Mirror</title>
+    <meta
+      name="description"
+      content="A static GitHub Pages mirror for the EnMed PCT calendar feed with ICS subscription support."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">EnMed PCT Calendar Mirror</p>
+          <h1>Clean calendar access from the public JSON feed.</h1>
+          <p class="lede">
+            This site mirrors the public event feed, generates a stable ICS export, and gives you
+            a fast dashboard for browsing, searching, and filtering by M0/M1/M2/M3/M4 and more.
+          </p>
+        </div>
+
+        <section class="subscribe-card" aria-labelledby="subscribe-title">
+          <div>
+            <p class="eyebrow">Subscribe in Google Calendar</p>
+            <h2 id="subscribe-title">Add the feed once, then let it refresh automatically.</h2>
+            <p class="subtle">
+              Use the published GitHub Pages ICS URL below. Google Calendar may take several hours to refresh.
+            </p>
+          </div>
+
+          <div class="url-row">
+            <input id="icsUrl" type="text" readonly aria-label="ICS subscription URL" />
+            <button id="copyIcsUrl" type="button">Copy URL</button>
+          </div>
+
+          <p class="url-hint">Google Calendar → Other calendars + → From URL → paste the ICS URL.</p>
+          <p class="url-hint">Pattern: https://OWNER.github.io/REPO/calendar.ics</p>
+        </section>
+      </header>
+
+      <main class="content">
+        <section class="controls-panel" aria-labelledby="controls-title">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Filters</p>
+              <h2 id="controls-title">Search and narrow the feed</h2>
+            </div>
+            <button id="resetFilters" type="button" class="ghost-button">Reset filters</button>
+          </div>
+
+          <div class="filters-grid">
+            <label>
+              <span>Search</span>
+              <input id="searchInput" type="search" placeholder="Title, description, info, presenter, location" />
+            </label>
+            <label>
+              <span>Category</span>
+              <select id="categoryFilter"></select>
+            </label>
+            <label>
+              <span>Block</span>
+              <select id="blockFilter"></select>
+            </label>
+            <label>
+              <span>mCal</span>
+              <select id="mCalFilter"></select>
+            </label>
+            <label>
+              <span>Mandatory</span>
+              <select id="mandFilter"></select>
+            </label>
+            <label>
+              <span>Group</span>
+              <select id="groupFilter"></select>
+            </label>
+          </div>
+
+          <div class="actions-row">
+            <button id="downloadFilteredIcs" type="button" class="primary-button">Download filtered ICS</button>
+            <div class="chip-row" id="activeFilterChips"></div>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Calendar summary">
+          <article>
+            <strong id="eventCount">0</strong>
+            <span>Events</span>
+          </article>
+          <article>
+            <strong id="upcomingCount">0</strong>
+            <span>Upcoming</span>
+          </article>
+          <article>
+            <strong id="mCalCount">0</strong>
+            <span>mCal values</span>
+          </article>
+          <article>
+            <strong id="lastUpdated">--</strong>
+            <span>Last updated</span>
+          </article>
+        </section>
+
+        <section class="calendar-panel" aria-labelledby="calendar-title">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Calendar</p>
+              <h2 id="calendar-title">Upcoming events first</h2>
+            </div>
+            <p id="resultSummary" class="subtle"></p>
+          </div>
+          <div id="eventList" class="event-list" aria-live="polite"></div>
+        </section>
+
+        <section class="help-panel" aria-labelledby="help-title">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">How it works</p>
+              <h2 id="help-title">Simple static hosting, no build step</h2>
+            </div>
+          </div>
+
+          <div class="help-grid">
+            <article>
+              <h3>1. Mirror the JSON feed</h3>
+              <p>The GitHub Action downloads the public events.json file and saves it into this repo.</p>
+            </article>
+            <article>
+              <h3>2. Generate ICS</h3>
+              <p>The Node script converts the JSON into a timezone-aware calendar.ics export.</p>
+            </article>
+            <article>
+              <h3>3. Publish to Pages</h3>
+              <p>GitHub Pages serves this dashboard plus the generated ICS file directly from the repo.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="eventTemplate">
+      <article class="event-card">
+        <div class="event-topline">
+          <div>
+            <p class="event-date"></p>
+            <h3 class="event-title"></h3>
+          </div>
+          <span class="event-badge"></span>
+        </div>
+        <p class="event-time"></p>
+        <p class="event-meta"></p>
+        <p class="event-desc"></p>
+        <dl class="event-fields"></dl>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
