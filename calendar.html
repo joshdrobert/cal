@@ -23,8 +23,8 @@
           <p class="eyebrow">EnMed Calendar</p>
           <h1>Browse the feed by mCal, date, and search.</h1>
           <p class="lede">
-            Use the chips to focus on M0, M1, M2, M3, M4, or show everything. The page groups
-            events chronologically and keeps the ICS subscription URL visible for easy sharing.
+            The page opens in Month view by default, and you can switch to Week or Day to get a
+            layout closer to Apple Calendar or Google Calendar.
           </p>
         </div>
 
@@ -37,12 +37,29 @@
             <button id="copyIcsUrl" type="button">Copy URL</button>
           </div>
           <p class="url-hint">Google Calendar → Other calendars + → From URL → paste the ICS URL.</p>
-          <p class="url-hint"><strong>If you want M0, M1, M2, and other specific calendars, use the filtered download below.</strong></p>
+          <p class="url-hint">
+            <strong>If you want M0, M1, M2, and other specific calendars, use the filtered download below.</strong>
+          </p>
+          <button id="downloadFilteredIcs" type="button" class="primary-button download-button">Download filtered ICS</button>
           <p class="url-hint"><a href="index.html">Open the dashboard list and filter panel.</a></p>
         </aside>
       </header>
 
-      <section class="calendar-toolbar" aria-label="Calendar filters">
+      <section class="calendar-toolbar" aria-label="Calendar controls">
+        <div class="calendar-controls-bar">
+          <div class="view-switcher" role="tablist" aria-label="View mode">
+            <button id="viewMonth" type="button" class="view-switch is-active" aria-pressed="true">Month</button>
+            <button id="viewWeek" type="button" class="view-switch" aria-pressed="false">Week</button>
+            <button id="viewDay" type="button" class="view-switch" aria-pressed="false">Day</button>
+          </div>
+
+          <div class="period-nav">
+            <button id="prevPeriod" type="button" class="nav-button">‹</button>
+            <button id="todayPeriod" type="button" class="nav-button nav-button-primary">Today</button>
+            <button id="nextPeriod" type="button" class="nav-button">›</button>
+          </div>
+        </div>
+
         <div class="toolbar-row">
           <label class="search-field">
             <span>Search</span>
@@ -96,27 +113,26 @@
         <div class="section-head compact">
           <div>
             <p class="eyebrow">Events</p>
-            <h2>Chronological calendar view</h2>
+            <h2 id="calendarTitle">Month</h2>
           </div>
           <p id="resultSummary" class="subtle"></p>
         </div>
-        <div id="eventList" class="calendar-group-list" aria-live="polite"></div>
+        <div id="calendarView" class="calendar-view" aria-live="polite"></div>
       </section>
     </div>
 
     <template id="eventTemplate">
-      <article class="calendar-event-card">
-        <div class="calendar-event-header">
+      <article class="agenda-card agenda-card--full">
+        <div class="agenda-card-topline">
           <div>
-            <p class="calendar-event-date"></p>
-            <h3 class="calendar-event-title"></h3>
+            <p class="agenda-card-time"></p>
+            <h4 class="agenda-card-title"></h4>
           </div>
-          <span class="calendar-event-badge"></span>
+          <span class="agenda-card-badge"></span>
         </div>
-        <p class="calendar-event-time"></p>
-        <p class="calendar-event-meta"></p>
-        <p class="calendar-event-desc"></p>
-        <dl class="calendar-event-fields"></dl>
+        <p class="agenda-card-meta"></p>
+        <p class="agenda-card-desc"></p>
+        <dl class="agenda-card-fields"></dl>
       </article>
     </template>
 
