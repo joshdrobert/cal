@@ -7,6 +7,7 @@ const state = {
   filtered: [],
   view: 'month',
   anchorDate: getChicagoToday(),
+  hasUrlDate: false,
   activeMCal: 'All',
   filters: {
     query: '',
@@ -39,6 +40,7 @@ async function init() {
     state.events = normalizeEvents(Array.isArray(data) ? data : []);
     populateFilterOptions(state.events);
     applyFilters();
+    ensureUsefulInitialDate();
     setLoadedAt();
   } catch (error) {
     renderError(error);
@@ -96,6 +98,7 @@ function bindEvents() {
 
 function syncStateFromUrl() {
   const params = new URLSearchParams(window.location.search);
+  state.hasUrlDate = params.has('date');
   state.view = ['month', 'week', 'day'].includes(params.get('view')) ? params.get('view') : 'month';
   state.anchorDate = parseDateInput(params.get('date')) || getChicagoToday();
   state.filters.query = params.get('q') || '';
@@ -194,6 +197,7 @@ function resetFilters() {
   state.activeMCal = 'All';
   state.view = 'month';
   state.anchorDate = getChicagoToday();
+  state.hasUrlDate = false;
   syncInputsFromFilters();
   renderMCalChips();
   renderViewButtons();
@@ -723,6 +727,22 @@ function makeMessage(text) {
   return div;
 }
 
+function ensureUsefulInitialDate() {
+  if (state.hasUrlDate || !state.filtered.length) {
+    return;
+  }
+
+  const range = getViewRange(state.view, state.anchorDate);
+  const hasEventsInView = state.filtered.some((event) => isDateInRange(event.date, range.start, range.end));
+  if (hasEventsInView) {
+    return;
+  }
+
+  state.anchorDate = { ...state.filtered[0].date };
+  applyFilters();
+  syncUrlFromState();
+}
+
 function buildSearchText(event) {
   return [event.title, event.desc, event.info, event.presenter, event.location]
     .map((value) => stringify(value).toLowerCase())
@@ -966,6 +986,14 @@ function getMandatoryValue(value) {
 
 function stringify(value) {
   return value == null ? '' : String(value).trim();
+}
+
+function escapeHtml(value) {
+  return stringify(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 function pad(value) {
