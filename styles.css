@@ -25,7 +25,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background:
     radial-gradient(circle at top left, rgba(106, 15, 26, 0.06), transparent 28%),
     linear-gradient(180deg, #fffdfa 0%, var(--bg) 40%, #f0efee 100%);
@@ -657,6 +657,61 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes popIn {
+  from { transform: translateY(8px) scale(.995); opacity: 0 }
+  to { transform: translateY(0) scale(1); opacity: 1 }
+}
+
+/* Subtle interactive animations */
+.event-card, .agenda-card, .calendar-event-card {
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+.event-card:hover, .agenda-card:hover, .calendar-event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(18,12,10,0.06);
+}
+
+.month-event-chip, .month-day-events button {
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+.month-event-chip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(18,12,10,0.06);
+}
+
+/* compact badges */
+.agenda-card-badge, .event-badge, .calendar-event-badge {
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+/* Responsive week view: horizontal scroll on small screens */
+@media (max-width: 960px) {
+  .week-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 8px;
+  }
+
+  .week-grid .week-column {
+    flex: 0 0 260px;
+    min-width: 240px;
+    max-width: 320px;
+  }
+
+  .week-column-events { max-height: 70vh; overflow: auto; }
+}
+
+@media (max-width: 640px) {
+  .month-day-cell { min-height: 100px; padding: 8px }
+  .month-event-title { font-size: 0.78rem }
+  .month-event-time { font-size: 0.68rem }
+  .calendar-subscribe-card.compact { display: flex; flex-direction: column; gap:8px }
 }
 
 @media (max-width: 960px) {
