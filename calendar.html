@@ -28,20 +28,22 @@
           </p>
         </div>
 
-        <aside class="calendar-subscribe-card">
-          <p class="eyebrow">Subscribe</p>
-          <h2>Google Calendar feed</h2>
-          <p class="subtle">Use the GitHub Pages ICS URL below for a live subscription.</p>
-          <div class="url-row">
-            <input id="icsUrl" type="text" readonly aria-label="ICS subscription URL" />
-            <button id="copyIcsUrl" type="button">Copy URL</button>
+        <aside class="calendar-subscribe-card compact">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div>
+              <p class="eyebrow">Subscribe</p>
+              <p style="margin:0;font-weight:700;color:var(--accent-strong);">Calendar ICS</p>
+            </div>
+            <div style="min-width:240px;">
+              <div class="url-row">
+                <input id="icsUrl" type="text" readonly aria-label="ICS subscription URL" />
+                <button id="copyIcsUrl" type="button">Copy</button>
+              </div>
+            </div>
           </div>
-          <p class="url-hint">Google Calendar → Other calendars + → From URL → paste the ICS URL.</p>
-          <p class="url-hint">
-            <strong>If you want M0, M1, M2, and other specific calendars, use the filtered download below.</strong>
-          </p>
-          <button id="downloadFilteredIcs" type="button" class="primary-button download-button">Download filtered ICS</button>
-          <p class="url-hint"><a href="index.html">Open the dashboard list and filter panel.</a></p>
+          <div style="margin-top:10px;display:flex;justify-content:flex-end;gap:8px;">
+            <button id="downloadFilteredIcs" type="button" class="primary-button download-button">Download ICS</button>
+          </div>
         </aside>
       </header>
 
