@@ -52,7 +52,7 @@ button {
   border: 0;
   border-radius: 999px;
   cursor: pointer;
-  transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease, color 140ms ease;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, color 120ms ease;
 }
 
 button:hover {
@@ -141,12 +141,12 @@ select:focus-visible {
 }
 
 .eyebrow {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--accent-strong);
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.74rem;
-  font-weight: 800;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 h1,
@@ -954,34 +954,34 @@ h3 {
 .month-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 8px;
+  gap: 6px;
   background: transparent;
   border: 0;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .month-weekday {
-  padding: 12px 10px;
-  background: rgba(255, 255, 255, 0.88);
-  font-size: 0.78rem;
-  font-weight: 800;
+  padding: 10px 8px;
+  background: transparent;
+  font-size: 0.76rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--muted);
 }
 
 .month-day-cell {
-  min-height: 120px;
+  min-height: 110px;
   border: 0;
   text-align: left;
-  padding: 12px;
+  padding: 8px;
   background: var(--surface-strong);
   display: grid;
-  gap: 8px;
+  gap: 6px;
   align-content: start;
-  transition: transform 140ms ease, box-shadow 140ms ease;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(18, 12, 10, 0.04);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(18, 12, 10, 0.01);
 }
 
 .month-day-cell:hover {
@@ -1010,8 +1010,8 @@ h3 {
 }
 
 .month-day-number {
-  font-weight: 800;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.93rem;
 }
 
 .month-day-chip {
@@ -1031,13 +1031,13 @@ h3 {
 .month-event-chip {
   width: 100%;
   display: grid;
-  gap: 2px;
+  gap: 1px;
   text-align: left;
-  border-radius: 10px;
-  padding: 8px 10px;
+  border-radius: 8px;
+  padding: 6px 7px;
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,249,249,0.98));
-  border: 1px solid rgba(80, 20, 30, 0.06);
-  box-shadow: 0 6px 12px rgba(18, 12, 10, 0.04);
+  border: 1px solid rgba(80, 20, 30, 0.03);
+  box-shadow: 0 1px 3px rgba(18, 12, 10, 0.01);
 }
 
 .month-event-chip.is-past {
@@ -1045,15 +1045,16 @@ h3 {
 }
 
 .month-event-time {
-  font-size: 0.75rem;
-  font-weight: 800;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: var(--accent);
 }
 
 .month-event-title {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text);
-  line-height: 1.2;
+  line-height: 1.15;
+  font-weight: 600;
 }
 
 .month-day-more {
