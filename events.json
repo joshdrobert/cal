@@ -1976,7 +1976,7 @@
     "presenter": ""
   },
   {
-    "title": "Unit 4 Exam (Written)",
+    "title": "Exam (Written)",
     "date": "09/25/2026",
     "start": "08:00",
     "end": "12:00",
@@ -1984,7 +1984,7 @@
     "block": "MGA/FOM I",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "Unit 4 Exam (Written)",
+    "desc": "Exam (Written)",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1992,10 +1992,10 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_45",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": ""
   },
   {
-    "title": "Unit 4 Practical Exam",
+    "title": "NBME Exam",
     "date": "09/25/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2003,7 +2003,7 @@
     "block": "MGA",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "Unit 4 Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2011,7 +2011,7 @@
     "location": "MITIE",
     "_id": "10051226_46",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": ""
   },
   {
     "title": "Active Learning",
@@ -2280,7 +2280,7 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "TBL #4",
+    "title": "TBL",
     "date": "10/14/2026",
     "start": "10:00",
     "end": "11:30",
@@ -2288,7 +2288,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "TBL #4",
+    "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2318,7 +2318,7 @@
     "presenter": ""
   },
   {
-    "title": "Unit 5 Exam (Written)",
+    "title": "Exam (Written)",
     "date": "10/16/2026",
     "start": "08:00",
     "end": "12:00",
@@ -2326,7 +2326,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Unit 5 Exam (Written)",
+    "desc": "Exam (Written)",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2334,10 +2334,10 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_63",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": ""
   },
   {
-    "title": "Unit 5 Practical Exam",
+    "title": "NBME Exam",
     "date": "10/16/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2345,7 +2345,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Unit 5 Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2353,7 +2353,7 @@
     "location": "MITIE",
     "_id": "10051226_64",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": ""
   },
   {
     "title": "Active Learning",
@@ -2620,25 +2620,6 @@
     "_id": "10051226_79",
     "info": "",
     "presenter": "Dr. Meyer, Dr.Omole"
-  },
-  {
-    "title": "MGA: Unit 6 Exam (Written)",
-    "date": "11/06/2026",
-    "start": "08:00",
-    "end": "12:00",
-    "category": "EXAM",
-    "block": "MGA",
-    "weekNum": 24,
-    "week": "Week 24",
-    "desc": "MGA: Unit 6 Exam (Written)",
-    "calYear": "2030",
-    "mCal": "M1",
-    "mand": "Yes",
-    "group": "All Students",
-    "location": "4th Flr Exam Rm 409 EnMed Twr",
-    "_id": "10051226_80",
-    "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -3337,11 +3318,13 @@
     "end": "12:00",
     "category": "Orientation",
     "block": "PoM 3",
-    "weekNum": "2",
+    "weekNum": 11,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 11",
+    "desc": "HEALOrientation:Course Introduction and Ethics Review"
   },
   {
     "_id": "11051226_2",
@@ -3356,11 +3339,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "3",
+    "weekNum": 12,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 12",
+    "desc": "HEAL: Difficult Conversations and Apologies"
   },
   {
     "_id": "11051226_3",
@@ -3375,11 +3360,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "3",
+    "weekNum": 12,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 12",
+    "desc": "How to Present"
   },
   {
     "_id": "11051226_4",
@@ -3394,11 +3381,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "3",
+    "weekNum": 12,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 12",
+    "desc": "How to Present"
   },
   {
     "_id": "11051226_5",
@@ -3413,11 +3402,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "4",
+    "weekNum": 13,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 13",
+    "desc": "Palliative and Hospice Care"
   },
   {
     "_id": "11051226_6",
@@ -3624,11 +3615,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "5",
+    "weekNum": 14,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 14",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_17",
@@ -3662,11 +3655,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "Dr. Smith",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "Upset Patient Workshop {Blackout Day}"
   },
   {
     "_id": "11051226_20",
@@ -3681,11 +3676,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "Focused Encounter Workshop (BBN-related) {Blackout Day}"
   },
   {
     "_id": "11051226_22",
@@ -3700,11 +3697,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "PoM 3 Preceptorships {Blackout Day}"
   },
   {
     "_id": "11051226_23",
@@ -3719,11 +3718,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "Assessment & Plan Series, Part 2 (Note Types)"
   },
   {
     "_id": "11051226_24",
@@ -3738,11 +3739,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_25",
@@ -3757,11 +3760,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "6",
+    "weekNum": 15,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 15",
+    "desc": "CHP OSCE (Make Up)"
   },
   {
     "_id": "11051226_26",
@@ -3795,11 +3800,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "7",
+    "weekNum": 16,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 16",
+    "desc": "Breaking Bad News (BBN) OSCE {BLACKOUT Day}"
   },
   {
     "_id": "11051226_28",
@@ -3814,11 +3821,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "7",
+    "weekNum": 16,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 16",
+    "desc": "Assessment & Plan Series, Part 3 (Oral Presentation)"
   },
   {
     "_id": "11051226_29",
@@ -3833,11 +3842,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "7",
+    "weekNum": 16,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 16",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_30",
@@ -3852,11 +3863,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "7",
+    "weekNum": 16,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 16",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_31",
@@ -8550,7 +8563,7 @@
     "presenter": "Dr. Priya, Dr. Meyer, and Dr. Peterson"
   },
   {
-    "title": "TBL #1",
+    "title": "TBL",
     "date": "08/12/2026",
     "start": "10:00:00",
     "end": "11:30:00",
@@ -8558,7 +8571,7 @@
     "block": "MGA/FoM I",
     "weekNum": 12,
     "week": "Week 12",
-    "desc": "TBL #1",
+    "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -8664,7 +8677,7 @@
     "presenter": "Dr. Meyer, Dr. Peterson, and Dr. Slivkoff"
   },
   {
-    "title": "TBL #2",
+    "title": "TBL",
     "date": "08/26/2026",
     "start": "13:00:00",
     "end": "14:30:00",
@@ -8672,7 +8685,7 @@
     "block": "MGA/FoM I",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "TBL #2",
+    "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -8778,7 +8791,7 @@
     "presenter": "Dr. Meyer"
   },
   {
-    "title": "TBL #3",
+    "title": "TBL",
     "date": "09/09/2026",
     "start": "10:00:00",
     "end": "11:30:00",
@@ -8786,7 +8799,7 @@
     "block": "MGA/FoM I",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "TBL #3",
+    "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9115,7 +9128,7 @@
     "mand": "Yes",
     "group": "All Students",
     "location": "Room 216 A/B, EnMed Tower",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "presenter": "Dr. Caplan",
     "_id": "1778765004163"
   },
