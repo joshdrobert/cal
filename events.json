@@ -3423,11 +3423,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "4",
+    "weekNum": 13,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 13",
+    "desc": "Assessment & Plan Series, Part 1"
   },
   {
     "_id": "11051226_7",
@@ -3442,11 +3444,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "4",
+    "weekNum": 13,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 13",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_8",
@@ -3461,11 +3465,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "4",
+    "weekNum": 13,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 13",
+    "desc": "CHP Workshop"
   },
   {
     "_id": "11051226_9",
@@ -3480,11 +3486,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "4",
+    "weekNum": 13,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 13",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_10",
@@ -3499,11 +3507,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "5",
+    "weekNum": 14,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 14",
+    "desc": "Upset Patient Overview and BBN OSCE Prep"
   },
   {
     "_id": "11051226_11",
@@ -3539,7 +3549,7 @@
     "block": "PoM 3",
     "weekNum": 14,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
     "mCal": "M2",
     "week": "Week 14",
@@ -3558,11 +3568,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "5",
+    "weekNum": 14,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 14",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_14",
@@ -3596,11 +3608,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "5",
+    "weekNum": 14,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 14",
+    "desc": "Complete H&POSCE {Blackout Day}"
   },
   {
     "_id": "11051226_16",
@@ -3884,11 +3898,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "8",
+    "weekNum": 17,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 17",
+    "desc": "HEAL Best Practices For Using Social Media"
   },
   {
     "_id": "11051226_32",
@@ -3903,11 +3919,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "8",
+    "weekNum": 17,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 17",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_33",
@@ -3922,11 +3940,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "8",
+    "weekNum": 17,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 17",
+    "desc": "Assessment & Plan Series, Part 1"
   },
   {
     "_id": "11051226_34",
@@ -3941,11 +3961,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "8",
+    "weekNum": 17,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 17",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_35",
@@ -3960,11 +3982,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "8",
+    "weekNum": 17,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 17",
+    "desc": "CHP Workshop"
   },
   {
     "_id": "11051226_36",
@@ -3979,11 +4003,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "9",
+    "weekNum": 18,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 18",
+    "desc": "HEAL Telemedicine and AI Technology Ethics"
   },
   {
     "_id": "11051226_37",
@@ -3998,11 +4024,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "9",
+    "weekNum": 18,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 18",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_40",
@@ -4036,11 +4064,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "9",
+    "weekNum": 18,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 18",
+    "desc": "Complete H&P OSCE (CHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_42",
@@ -4055,11 +4085,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "9",
+    "weekNum": 18,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 18",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_43",
@@ -4093,11 +4125,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "9",
+    "weekNum": 18,
     "presenter": "Dr. Caplan",
-    "info": "",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 18",
+    "desc": "Complete H&P OSCE (CHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_45",
@@ -4112,11 +4146,13 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "Upset Patient Workshop"
   },
   {
     "_id": "11051226_46",
@@ -4131,11 +4167,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_47",
@@ -4150,11 +4188,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "Focused Encounter Workshop (BBN-related)"
   },
   {
     "_id": "11051226_48",
@@ -4169,11 +4209,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_49",
@@ -4188,11 +4230,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "Assessment & Plan Series, Part 2 (Note Types)"
   },
   {
     "_id": "11051226_50",
@@ -4207,11 +4251,13 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": "10",
+    "weekNum": 19,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas",
+    "info": "Please see Canvas for student group assignments and additional information.",
     "calYear": "2029",
-    "mCal": "M2"
+    "mCal": "M2",
+    "week": "Week 19",
+    "desc": "CHP OSCE (Make Up)"
   },
   {
     "_id": "11051226_51",
@@ -4243,9 +4289,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 11,
+    "weekNum": 20,
     "presenter": "Dr. Smith",
-    "info": ""
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 20",
+    "desc": "HEAL: Breaking Bad News (BBN) OSCE {Blackout Day}"
   },
   {
     "_id": "11051226_53",
@@ -4260,9 +4308,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 11,
+    "weekNum": 20,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 20",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_54",
@@ -4277,9 +4327,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 11,
+    "weekNum": 20,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 20",
+    "desc": "Assessment & Plan Series, Part 3 (Oral Presentation)"
   },
   {
     "_id": "11051226_55",
@@ -4294,9 +4346,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 11,
+    "weekNum": 20,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 20",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_56",
@@ -4311,9 +4365,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 12,
+    "weekNum": 21,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 21",
+    "desc": "Health Care Economics and Regulation"
   },
   {
     "_id": "11051226_57",
@@ -4328,9 +4384,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 12,
+    "weekNum": 21,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 21",
+    "desc": "Preceptor Case Presentations"
   },
   {
     "_id": "11051226_58",
@@ -4345,9 +4403,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 12,
+    "weekNum": 21,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 21",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_59",
@@ -4362,9 +4422,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 12,
+    "weekNum": 21,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 21",
+    "desc": "Focused H&P Workshop"
   },
   {
     "_id": "11051226_60",
@@ -4379,9 +4441,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 12,
+    "weekNum": 21,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 21",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_61",
@@ -4396,9 +4460,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 13,
+    "weekNum": 22,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 22",
+    "desc": "Value-Based Care"
   },
   {
     "_id": "11051226_62",
@@ -4430,9 +4496,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 13,
+    "weekNum": 22,
     "presenter": "Dr. Caplan",
-    "info": ""
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 22",
+    "desc": "Focused H&P OSCE (FHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_64",
@@ -4447,9 +4515,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 13,
+    "weekNum": 22,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 22",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_65",
@@ -4481,9 +4551,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 13,
+    "weekNum": 22,
     "presenter": "Dr. Caplan",
-    "info": ""
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 22",
+    "desc": "Focused H&P OSCE (FHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_67",
@@ -4498,9 +4570,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 13,
+    "weekNum": 22,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 22",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_68",
@@ -4515,9 +4589,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 14,
+    "weekNum": 23,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 23",
+    "desc": "Selective Session 1"
   },
   {
     "_id": "11051226_69",
@@ -4532,9 +4608,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 14,
+    "weekNum": 23,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 23",
+    "desc": "Hospital Simulation"
   },
   {
     "_id": "11051226_70",
@@ -4549,9 +4627,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 14,
+    "weekNum": 23,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 23",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_71",
@@ -4566,9 +4646,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 14,
+    "weekNum": 23,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 23",
+    "desc": "Harvey Simulation"
   },
   {
     "_id": "11051226_72",
@@ -4583,9 +4665,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 14,
+    "weekNum": 23,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 23",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_73",
@@ -4600,9 +4684,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 15,
+    "weekNum": 24,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 24",
+    "desc": "Selective Session 2"
   },
   {
     "_id": "11051226_74",
@@ -4617,9 +4703,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 15,
+    "weekNum": 24,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 24",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_75",
@@ -4634,9 +4722,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 15,
+    "weekNum": 24,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 24",
+    "desc": "Preceptor Case Presentations"
   },
   {
     "_id": "11051226_76",
@@ -4651,9 +4741,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 15,
+    "weekNum": 24,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 24",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_77",
@@ -4668,9 +4760,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 15,
+    "weekNum": 24,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 24",
+    "desc": "Focused H&P Workshop"
   },
   {
     "_id": "11051226_78",
@@ -4685,9 +4779,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 16,
+    "weekNum": 25,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 25",
+    "desc": "Selective Session 3"
   },
   {
     "_id": "11051226_79",
@@ -4702,9 +4798,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 16,
+    "weekNum": 25,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 25",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_80",
@@ -4736,9 +4834,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 16,
+    "weekNum": 25,
     "presenter": "Dr. Caplan",
-    "info": "Blackout Day"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 25",
+    "desc": "Focused H&P OSCE (FHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_82",
@@ -4753,9 +4853,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 16,
+    "weekNum": 25,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 25",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_83",
@@ -4787,9 +4889,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 16,
+    "weekNum": 25,
     "presenter": "Dr. Caplan",
-    "info": "Blackout Day"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 25",
+    "desc": "Focused H&P OSCE (FHP OSCEs) {Blackout Day}"
   },
   {
     "_id": "11051226_85",
@@ -4804,9 +4908,11 @@
     "end": "12:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 17,
+    "weekNum": 26,
     "presenter": "Dr. Smith",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 26",
+    "desc": "Selective Session 4"
   },
   {
     "_id": "11051226_86",
@@ -4821,9 +4927,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 17,
+    "weekNum": 26,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 26",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_87",
@@ -4838,9 +4946,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 17,
+    "weekNum": 26,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 26",
+    "desc": "Hospital Simulation"
   },
   {
     "_id": "11051226_88",
@@ -4855,9 +4965,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 17,
+    "weekNum": 26,
     "presenter": "",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 26",
+    "desc": "PoM 3 Preceptorships"
   },
   {
     "_id": "11051226_89",
@@ -4872,9 +4984,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 17,
+    "weekNum": 26,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 26",
+    "desc": "Harvey Simulation"
   },
   {
     "_id": "11051226_90",
@@ -4889,9 +5003,11 @@
     "end": "17:00",
     "category": "Session",
     "block": "PoM 3",
-    "weekNum": 18,
+    "weekNum": 27,
     "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "week": "Week 27",
+    "desc": "PoM 3 Final OSCE"
   },
   {
     "_id": "11051226_91",
