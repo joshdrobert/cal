@@ -1596,7 +1596,7 @@
     "presenter": "Dr. Meyer, Dr.Omole"
   },
   {
-    "title": "Unit 2 Exam (Written)",
+    "title": "Exam (Written)",
     "date": "08/28/2026",
     "start": "08:00",
     "end": "12:00",
@@ -1604,7 +1604,7 @@
     "block": "MGA/FoM I",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "Unit 2 Exam (Written)",
+    "desc": "Exam (Written)",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1615,7 +1615,7 @@
     "presenter": "Dr. Meyer, Dr.Omole"
   },
   {
-    "title": "Unit 2 Practical Exam",
+    "title": "NBME Exam",
     "date": "08/28/2026",
     "start": "13:00",
     "end": "17:00",
@@ -1623,7 +1623,7 @@
     "block": "MGA",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "Unit 2 Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1786,15 +1786,15 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "Unit 3 Exam Check-in",
+    "title": "Exam Check-in",
     "date": "09/11/2026",
     "start": "07:45",
-    "end": "08:00",
+    "end": "7:55",
     "category": "Exam Check-In",
     "block": "MGA/FOM I",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "Unit 3 Exam Check-in",
+    "desc": "Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1802,10 +1802,10 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_35",
     "info": "",
-    "presenter": ""
+    "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
-    "title": "Unit 3 Exam (Written)",
+    "title": "Exam (Written)",
     "date": "09/11/2026",
     "start": "08:00",
     "end": "12:00",
@@ -1813,7 +1813,7 @@
     "block": "MGA/FoM I",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "Unit 3 Exam (Written)",
+    "desc": "Exam (Written)",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1821,10 +1821,10 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_36",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
-    "title": "Unit 3 Practical Exam",
+    "title": "NBME Exam",
     "date": "09/11/2026",
     "start": "13:00",
     "end": "17:00",
@@ -1832,7 +1832,7 @@
     "block": "MGA",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "Unit 3 Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1992,7 +1992,7 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_45",
     "info": "",
-    "presenter": ""
+    "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
     "title": "NBME Exam",
@@ -2584,15 +2584,15 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "Unit 6 Exam Check-in",
+    "title": "Exam Check-in",
     "date": "11/06/2026",
     "start": "07:45",
     "end": "07:55",
     "category": "Exam Check-In",
-    "block": "MGA",
+    "block": "MGA/ FOM I",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "Unit 6 Exam Check-in",
+    "desc": "Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2600,7 +2600,7 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "10051226_78",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
     "title": "Unit 6 EXAM (Written)",
@@ -6642,10 +6642,10 @@
     "date": "07/29/2026",
     "start": "10:00:00",
     "end": "12:00:00",
-    "category": "Orientation",
+    "category": "Session",
     "block": "Respiratory",
-    "weekNum": 1,
-    "week": "1",
+    "weekNum": 10,
+    "week": "Week 10",
     "desc": "Course Intro + Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -9021,15 +9021,15 @@
     "presenter": "Dr. Meyer"
   },
   {
-    "title": "TBL ????",
+    "title": "TBL",
     "date": "09/23/2026",
     "start": "10:00:00",
     "end": "11:30:00",
     "category": "TBL",
-    "block": "MGA/FoM I",
+    "block": "FoM I",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "TBL ????",
+    "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9173,34 +9173,15 @@
     "presenter": "Dr. Priya, Dr. Omole, Dr. Meyer"
   },
   {
-    "title": "Exam #5 & NBME ???",
+    "title": "Exam (Written)",
     "date": "11/06/2026",
-    "start": "08:45:00",
-    "end": "08:55:00",
-    "category": "EXAM check-in",
-    "block": "MGA/FoM I",
-    "weekNum": 24,
-    "week": "Week 24",
-    "desc": "Exam #5 & NBME ???",
-    "calYear": "2030",
-    "mCal": "M1",
-    "mand": "Yes",
-    "group": "All Students",
-    "location": "4th Flr Exam Rm 409 EnMed Twr",
-    "_id": "2051226_41",
-    "info": "",
-    "presenter": ""
-  },
-  {
-    "title": "Exam #5 & NBME Check-In",
-    "date": "11/06/2026",
-    "start": "09:00:00",
-    "end": "11:00:00",
+    "start": "08:00:00",
+    "end": "12:00:00",
     "category": "Exam",
-    "block": "MGA/FoM I",
+    "block": "MGA/FOM I",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "Exam #5 & NBME Check-In",
+    "desc": "Exam (Written)",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9208,7 +9189,7 @@
     "location": "4th Flr Exam Rm 409 EnMed Twr",
     "_id": "2051226_42",
     "info": "",
-    "presenter": ""
+    "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
     "title": "Blackout Day",
@@ -9420,7 +9401,7 @@
     "_id": "1778811358625"
   },
   {
-    "title": "Unit 6 Practical Exam",
+    "title": "NBME Exam",
     "date": "11/06/2026",
     "start": "13:00",
     "end": "17:00",
@@ -9428,7 +9409,7 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "Unit 6 Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9456,5 +9437,43 @@
     "info": "",
     "presenter": "",
     "_id": "1779140947977"
+  },
+  {
+    "title": "Exam Check-in",
+    "date": "11/06/2026",
+    "start": "12:45",
+    "end": "12:55",
+    "category": "Exam Check-In",
+    "block": "MGA",
+    "weekNum": 24,
+    "week": "Week 24",
+    "desc": "Exam Check-in",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "",
+    "location": "MITIE",
+    "info": "",
+    "presenter": "Dr. Meyer, Dr. Omole",
+    "_id": "1779206074882"
+  },
+  {
+    "title": "Exam Check-in",
+    "date": "09/11/2026",
+    "start": "12:45",
+    "end": "12:55",
+    "category": "Exam Check-In",
+    "block": "MGA",
+    "weekNum": 16,
+    "week": "Week 16",
+    "desc": "Exam Check-in",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "4th Flr Exam Rm 409 EnMed Twr",
+    "info": "",
+    "presenter": "Dr. Meyer, Dr.Omole",
+    "_id": "1779207901085"
   }
 ]
