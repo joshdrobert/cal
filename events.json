@@ -1693,7 +1693,7 @@
   {
     "title": "MITIE Lab Dissection [Group A]",
     "date": "09/03/2026",
-    "start": "01:30",
+    "start": "13:30",
     "end": "16:30",
     "category": "",
     "block": "MGA",
@@ -9380,25 +9380,6 @@
     "info": "Abdominal contents (foregut)",
     "presenter": "Dr. Meyer, Dr.Omole",
     "_id": "1778811053268"
-  },
-  {
-    "title": "MITIE Lab Dissection",
-    "date": "09/03/2026",
-    "start": "13:30",
-    "end": "16:30",
-    "category": "Lab",
-    "block": "MGA",
-    "weekNum": 15,
-    "week": "Week 15",
-    "desc": "MITIE Lab Dissection",
-    "calYear": "2030",
-    "mCal": "M1",
-    "mand": "Yes",
-    "group": "Group A",
-    "location": "MITIE",
-    "info": "Abdominal contents (midgut)",
-    "presenter": "Dr. Meyer, Dr.Omole",
-    "_id": "1778811358625"
   },
   {
     "title": "NBME Exam",
