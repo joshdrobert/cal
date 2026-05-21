@@ -7780,8 +7780,8 @@
   {
     "title": "Lecture 2 - Clinical Needs - Design Inputs",
     "date": "06/02/2026",
-    "start": "10:00",
-    "end": "11:00",
+    "start": "11:00",
+    "end": "12:00",
     "category": "ITDE",
     "block": "Pre-Matriculation Week 2",
     "weekNum": 2,
@@ -7797,15 +7797,15 @@
     "presenter": "Dr. Nicholas Sears, Dr. Shannon Wilson"
   },
   {
-    "title": "Lecture 3 - Ideation and Concept Development",
+    "title": "Lecture 4 - Ideation and Concept Development",
     "date": "06/09/2026",
     "start": "10:00",
     "end": "11:00",
     "category": "ITDE",
-    "block": "Pre-Matriculation Week 2",
+    "block": "Pre-Matriculation Week 3",
     "weekNum": 3,
     "week": "Week 3",
-    "desc": "Lecture 3 - Ideation and Concept Development",
+    "desc": "Lecture 4 - Ideation and Concept Development",
     "calYear": "2030",
     "mCal": "M0",
     "mand": "Yes",
@@ -7854,7 +7854,7 @@
     "presenter": "Dr. Nicholas Sears"
   },
   {
-    "title": "Lecture 4 - Intellectual Property",
+    "title": "Lecture 3 - Intellectual Property",
     "date": "06/04/2026",
     "start": "11:00",
     "end": "12:00",
@@ -7862,7 +7862,7 @@
     "block": "Pre-Matriculation Week 2",
     "weekNum": 2,
     "week": "Week 2",
-    "desc": "Lecture 4 - Intellectual Property",
+    "desc": "Lecture 3 - Intellectual Property",
     "calYear": "2030",
     "mCal": "M0",
     "mand": "Yes",
@@ -9896,25 +9896,6 @@
   },
   {
     "title": "Break - No class",
-    "date": "09/18/2026",
-    "start": "07:00",
-    "end": "07:30",
-    "category": "Holiday",
-    "block": "Break - No class",
-    "weekNum": 4,
-    "week": "Week 4",
-    "desc": "",
-    "calYear": "2029",
-    "mCal": "M2",
-    "mand": "",
-    "group": "",
-    "location": "",
-    "info": "",
-    "presenter": "",
-    "_id": "17792993480871"
-  },
-  {
-    "title": "Break - No class",
     "date": "10/19/2026",
     "start": "07:00",
     "end": "07:30",
@@ -10026,5 +10007,24 @@
     "info": "",
     "presenter": "",
     "_id": "1779301958460"
+  },
+  {
+    "title": "Blackout Day",
+    "date": "05/26/2026",
+    "start": "07:00",
+    "end": "07:30",
+    "category": "BLACKOUT",
+    "block": "Pre-Matriculation",
+    "weekNum": 1,
+    "week": "Week 1",
+    "desc": "Blackout Day",
+    "calYear": "2029",
+    "mCal": "M0",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "1779393751324"
   }
 ]
