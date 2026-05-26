@@ -10786,5 +10786,24 @@
     "info": "",
     "presenter": "",
     "_id": "1779467804078"
+  },
+  {
+    "title": "Blackout Day",
+    "date": "08/14/2026",
+    "start": "07:00",
+    "end": "07:30",
+    "category": "BLACKOUT",
+    "block": "",
+    "weekNum": 12,
+    "week": "Week 12",
+    "desc": "Blackout Day",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "1779759583433"
   }
 ]
