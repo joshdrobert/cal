@@ -7304,7 +7304,7 @@
   },
   {
     "title": "Active Learning",
-    "date": "07/31/2026",
+    "date": "07/30/2026",
     "start": "11:00:00",
     "end": "12:00:00",
     "category": "Session",
@@ -8266,7 +8266,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_7",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8285,7 +8285,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_8",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8304,7 +8304,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_9",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8323,7 +8323,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_10",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8342,7 +8342,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_11",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8361,7 +8361,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_12",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -8380,7 +8380,7 @@
     "mCal": "M0",
     "mand": "Yes",
     "group": "All Students",
-    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "location": "17th Floor, Rm 1715",
     "_id": "1777342011315_13",
     "info": "",
     "presenter": "Dr. Ashutosh Agrawal"
@@ -10843,25 +10843,6 @@
     "info": "",
     "presenter": "",
     "_id": "1779832405367"
-  },
-  {
-    "title": "[MAND] Introduction Boot Camp",
-    "date": "07/02/2026",
-    "start": "00:00",
-    "end": "13:00",
-    "category": "Session",
-    "block": "",
-    "weekNum": 6,
-    "week": "Week 6",
-    "desc": "[MAND] Introduction Boot Camp",
-    "calYear": "2029",
-    "mCal": "M1",
-    "mand": "Yes",
-    "group": "All Students",
-    "location": "TBD",
-    "info": "",
-    "presenter": "Dr. Day, Dr. Priya, Dr. Meyer, Dr. Omule, Dr. Chance",
-    "_id": "81dc9079-0141-4323-adb9-a2c0f4339c33"
   },
   {
     "title": "Introduction Boot Camp",
