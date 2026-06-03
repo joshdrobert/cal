@@ -1896,7 +1896,7 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_1",
-    "info": "Pectoral region and breast; Vertebral column; Skin: Pectoral region",
+    "info": "Pectoral region and breast; Vertebral column",
     "presenter": "Dr.Meyer"
   },
   {
@@ -2372,7 +2372,7 @@
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_30",
     "info": "Anterolateral abdominal wall and innervation; Abdominal contents (foregut); Abdominal contents (midgut and hindgut); Abdominal radiology",
-    "presenter": "Dr. Meyer"
+    "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
     "title": "MITIE Lab Dissection",
@@ -10847,8 +10847,8 @@
   {
     "title": "Introduction Boot Camp",
     "date": "07/02/2026",
-    "start": "12:00",
-    "end": "13:00",
+    "start": "13:00",
+    "end": "14:00",
     "category": "Session",
     "block": "",
     "weekNum": 6,
