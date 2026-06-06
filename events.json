@@ -7094,25 +7094,6 @@
     "info": "Additional info, please see Canvas"
   },
   {
-    "_id": "1051226_67",
-    "mand": "Yes",
-    "title": "Blackout Day",
-    "group": "All Students",
-    "location": "",
-    "calYear": "2030",
-    "mCal": "M1",
-    "date": "",
-    "start": "07:00",
-    "end": "07:30",
-    "category": "BLACKOUT",
-    "block": "",
-    "weekNum": 16,
-    "week": "Week 16",
-    "desc": "Blackout Day",
-    "presenter": "",
-    "info": ""
-  },
-  {
     "_id": "1051226_68",
     "mand": "Yes",
     "title": "Clinical Cadaver Integration Presentation {Blackout Day}",
@@ -7130,25 +7111,6 @@
     "desc": "Clinical Cadaver Integration Presentation {Blackout Day}",
     "presenter": "TBD",
     "info": "Additional info, please see Canvas"
-  },
-  {
-    "_id": "1051226_69",
-    "mand": "Yes",
-    "title": "Blackout Day",
-    "group": "All Students",
-    "location": "",
-    "calYear": "2030",
-    "mCal": "M1",
-    "date": "",
-    "start": "07:00",
-    "end": "07:30",
-    "category": "BLACKOUT",
-    "block": "",
-    "weekNum": 17,
-    "week": "Week 17",
-    "desc": "Blackout Day",
-    "presenter": "",
-    "info": ""
   },
   {
     "_id": "1051226_70",
