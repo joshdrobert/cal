@@ -7860,8 +7860,8 @@
     "end": "12:00:00",
     "category": "Session",
     "block": "GI",
-    "weekNum": 1,
-    "week": "1",
+    "weekNum": 18,
+    "week": "Week 18",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7870,17 +7870,17 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_1",
     "info": "Pathology of the Oral Cavity, Pathology of the Esophagus, Pathology of the Stomach",
-    "presenter": ""
+    "presenter": "Dr. Hughes"
   },
   {
     "title": "Active Learning",
     "date": "09/28/2026",
     "start": "09:00:00",
-    "end": "12:00:00",
+    "end": "11:00:00",
     "category": "Session",
     "block": "GI",
-    "weekNum": 1,
-    "week": "2",
+    "weekNum": 19,
+    "week": "Week 19",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7889,7 +7889,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_2",
     "info": "Pathology of Lower GI",
-    "presenter": ""
+    "presenter": "Dr. Paolini"
   },
   {
     "title": "TBL",
@@ -7955,8 +7955,8 @@
     "end": "12:00:00",
     "category": "Session",
     "block": "GI",
-    "weekNum": 1,
-    "week": "3",
+    "weekNum": 20,
+    "week": "Week 20",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7965,7 +7965,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_6",
     "info": "Pathology of the Liver I, Pathology of the Liver II, Pathology of the Gall Bladder and Biliary Tract",
-    "presenter": ""
+    "presenter": "Dr. Hughes"
   },
   {
     "title": "Active Learning",
@@ -9249,15 +9249,15 @@
     "presenter": "Dr. Priya"
   },
   {
-    "title": "Active Learning",
+    "title": "Active Learning & Histology Lab",
     "date": "08/03/2026",
-    "start": "09:00:00",
+    "start": "08:00:00",
     "end": "10:00:00",
     "category": "Session",
     "block": "FoM I",
-    "weekNum": 1,
-    "week": "1",
-    "desc": "Active Learning",
+    "weekNum": 11,
+    "week": "Week 11",
+    "desc": "Active Learning & Histology Lab",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "No",
@@ -9265,25 +9265,6 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_3",
     "info": "Histology: Epithelium and connective tissue",
-    "presenter": "Dr. Meyer"
-  },
-  {
-    "title": "Histology Lab",
-    "date": "08/03/2026",
-    "start": "10:00:00",
-    "end": "11:00:00",
-    "category": "Lab",
-    "block": "FoM I",
-    "weekNum": 1,
-    "week": "1",
-    "desc": "Histology Lab",
-    "calYear": "2030",
-    "mCal": "M1",
-    "mand": "No",
-    "group": "All Students",
-    "location": "2nd Flr Rm 212 A/B EnMed Twr",
-    "_id": "2051226_4",
-    "info": "Epithelium and connective tissue",
     "presenter": "Dr. Meyer"
   },
   {
@@ -9928,8 +9909,8 @@
     "mand": "No",
     "group": "All Students",
     "location": "2nd Flr Rm 216 EnMed Twr",
-    "info": "Overview of GI Function/ Regulation/",
-    "presenter": "",
+    "info": "Overview of GI Function/ Regulation/ \nMotility/ Absorption and Digestion",
+    "presenter": "Dr. Slivkoff",
     "_id": "1778765270575"
   },
   {
@@ -11280,5 +11261,24 @@
     "_id": "c6a1e529-05b5-4d56-8189-39b5e4ed66ac",
     "info": "",
     "presenter": ""
+  },
+  {
+    "title": "Active Learning",
+    "date": "09/28/2026",
+    "start": "11:00",
+    "end": "12:00",
+    "category": "Session",
+    "block": "GI",
+    "weekNum": 19,
+    "week": "Week 19",
+    "desc": "Active Learning",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "No",
+    "group": "",
+    "location": "2nd Flr Rm 216 EnMed Twr",
+    "info": "Pharmacology",
+    "presenter": "Dr. Rogers",
+    "_id": "16ccd663-75e4-4ccc-b188-ab8f597662d3"
   }
 ]
