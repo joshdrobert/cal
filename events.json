@@ -11261,5 +11261,43 @@
     "info": "Pharmacology",
     "presenter": "Dr. Rogers",
     "_id": "16ccd663-75e4-4ccc-b188-ab8f597662d3"
+  },
+  {
+    "title": "BLACKOUT DAY",
+    "date": "09/14/2026",
+    "start": "07:00",
+    "end": "07:30",
+    "category": "BLACKOUT",
+    "block": "Renal",
+    "weekNum": 17,
+    "week": "Week 17",
+    "desc": "BLACKOUT DAY",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "d01c7b11-1d50-4e8f-b606-3aa550820560"
+  },
+  {
+    "title": "BLACKOUT DAY",
+    "date": "09/18/2026",
+    "start": "07:00",
+    "end": "07:30",
+    "category": "BLACKOUT",
+    "block": "Renal",
+    "weekNum": 17,
+    "week": "Week 17",
+    "desc": "BLACKOUT DAY",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "c5f1a352-8c27-4e1e-8f35-72de93895497"
   }
 ]
