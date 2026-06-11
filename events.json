@@ -7669,7 +7669,7 @@
     "start": "07:45:00",
     "end": "07:55:00",
     "category": "Exam Check-In",
-    "block": "MSK/EBM",
+    "block": "MSK, EBM",
     "weekNum": 29,
     "week": "Week 29",
     "desc": "Exam #1 Check-In",
