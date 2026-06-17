@@ -1953,8 +1953,8 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_4",
-    "info": "Thoracic wall; Deep back",
-    "presenter": "Dr.Omole"
+    "info": "Thoracic wall; Deep back; Basic concepts of embryology",
+    "presenter": "Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -1972,8 +1972,8 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_5",
-    "info": "Basic concepts of embryology; Introduction to radiology",
-    "presenter": "Omole & Wilson"
+    "info": "Introduction to radiology",
+    "presenter": "Dr. Wilson"
   },
   {
     "title": "Active Learning",
@@ -2052,7 +2052,7 @@
     "presenter": "Dr. Meyer, Dr.Omole"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Written Exam Check-in",
     "date": "08/14/2026",
     "start": "08:45",
     "end": "08:55",
@@ -2060,7 +2060,7 @@
     "block": "MGA, FOM I",
     "weekNum": 12,
     "week": "Week 12",
-    "desc": "EXAM Check-in",
+    "desc": "Written Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2071,7 +2071,7 @@
     "presenter": ""
   },
   {
-    "title": "EXAM (Written)",
+    "title": "Written Exam",
     "date": "08/14/2026",
     "start": "09:00",
     "end": "12:00",
@@ -2079,7 +2079,7 @@
     "block": "MGA, FOM I",
     "weekNum": 12,
     "week": "Week 12",
-    "desc": "EXAM (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2144,7 +2144,7 @@
     "location": "MITIE",
     "_id": "10051226_15",
     "info": "Heart and mediastinum",
-    "presenter": "Dr. Meyer, Dr.Omole"
+    "presenter": "Dr. Hughes, Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -2242,7 +2242,7 @@
     "presenter": "Dr. Meyer, Dr.Omole"
   },
   {
-    "title": "Exam (Written)",
+    "title": "Written Exam",
     "date": "08/28/2026",
     "start": "08:00",
     "end": "12:00",
@@ -2250,7 +2250,7 @@
     "block": "MGA, FOM I",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "Exam (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2261,7 +2261,7 @@
     "presenter": "Dr. Meyer, Dr.Omole"
   },
   {
-    "title": "NBME EXAM",
+    "title": "Practical Exam",
     "date": "08/28/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2269,7 +2269,7 @@
     "block": "MGA",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "NBME EXAM",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2353,7 +2353,7 @@
     "location": "Group A",
     "_id": "10051226_29",
     "info": "Abdominal contents (midgut)",
-    "presenter": "Dr. Meyer, Dr.Omole"
+    "presenter": "Dr. Hughes, Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -2377,7 +2377,7 @@
   {
     "title": "MITIE Lab Dissection",
     "date": "09/04/2026",
-    "start": "13:00",
+    "start": "13:30",
     "end": "15:30",
     "category": "Lab",
     "block": "MGA",
@@ -2391,7 +2391,7 @@
     "location": "MITIE",
     "_id": "10051226_31",
     "info": "Posterior abdominal wall",
-    "presenter": "Dr. Meyer, Dr.Omole"
+    "presenter": "Dr. Meyer and Dr.Omole"
   },
   {
     "title": "Active Learning",
@@ -2432,7 +2432,7 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Written Exam Check-in",
     "date": "09/11/2026",
     "start": "07:45",
     "end": "7:55",
@@ -2440,7 +2440,7 @@
     "block": "MGA, FOM I",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "EXAM Check-in",
+    "desc": "Written Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2451,7 +2451,7 @@
     "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
-    "title": "EXAM (Written)",
+    "title": "Written Exam",
     "date": "09/11/2026",
     "start": "08:00",
     "end": "12:00",
@@ -2459,7 +2459,7 @@
     "block": "MGA, FOM I",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "EXAM (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2470,7 +2470,7 @@
     "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
-    "title": "NBME EXAM",
+    "title": "Practical Exam",
     "date": "09/11/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2478,7 +2478,7 @@
     "block": "MGA",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "NBME EXAM",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2562,7 +2562,7 @@
     "location": "MITIE",
     "_id": "10051226_41",
     "info": "Pelvis II and neurovasculature",
-    "presenter": "Dr. Omole, Dr. Meyer"
+    "presenter": "Dr. Hughes, Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -2581,7 +2581,7 @@
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_42",
     "info": "Pelvis, pelvis floor and neurovasculature; Perineum",
-    "presenter": "Dr. Meyer, Dr. Omole"
+    "presenter": "Dr. Omole"
   },
   {
     "title": "Active Learning",
@@ -2603,15 +2603,15 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Written Exam Check-in",
     "date": "09/25/2026",
     "start": "07:45",
     "end": "07:55",
-    "category": "Exam Check-In",
+    "category": "EXAM CHECK-IN",
     "block": "MGA, FOM I",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "EXAM Check-in",
+    "desc": "Written Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2622,7 +2622,7 @@
     "presenter": ""
   },
   {
-    "title": "EXAM (Written)",
+    "title": "Written Exam",
     "date": "09/25/2026",
     "start": "08:00",
     "end": "12:00",
@@ -2630,7 +2630,7 @@
     "block": "MGA, FOM I",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "EXAM (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2641,7 +2641,7 @@
     "presenter": "Dr. Meyer, Dr. Omole, Dr. Priya"
   },
   {
-    "title": "NBME Exam",
+    "title": "Practical Exam",
     "date": "09/25/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2649,7 +2649,7 @@
     "block": "MGA",
     "weekNum": 18,
     "week": "Week 18",
-    "desc": "NBME Exam",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2945,7 +2945,7 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "Exam Check-in",
+    "title": "Written Exam Check-in",
     "date": "10/16/2026",
     "start": "07:45",
     "end": "08:00",
@@ -2953,7 +2953,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Exam Check-in",
+    "desc": "Written Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2964,7 +2964,7 @@
     "presenter": ""
   },
   {
-    "title": "Exam (Written)",
+    "title": "Written Exam",
     "date": "10/16/2026",
     "start": "08:00",
     "end": "12:00",
@@ -2972,7 +2972,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Exam (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -2983,7 +2983,7 @@
     "presenter": ""
   },
   {
-    "title": "NBME Exam",
+    "title": "Practical Exam",
     "date": "10/16/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2991,7 +2991,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "NBME Exam",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -3230,7 +3230,7 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Written Exam Check-in",
     "date": "11/06/2026",
     "start": "07:45",
     "end": "07:55",
@@ -3238,7 +3238,7 @@
     "block": "MGA, FOM I",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "EXAM Check-in",
+    "desc": "Written Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9307,7 +9307,7 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_8",
     "info": "Histology and Physiology",
-    "presenter": "Dr. Priya, Dr. Meyer, Dr. Omole, and Dr. Peterson"
+    "presenter": "Dr. Priya, Dr. Meyer, Dr. Omole, Dr. Peterson"
   },
   {
     "title": "Histology Lab",
@@ -9421,10 +9421,10 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_16",
     "info": "",
-    "presenter": "Dr. Priya, Dr. Meyer, and Dr. Peterson"
+    "presenter": "Dr. Priya, Dr. Meyer, Dr. Omole and Dr. Peterson"
   },
   {
-    "title": "EXAM Check-In",
+    "title": "Written Exam Check-In",
     "date": "08/28/2026",
     "start": "07:45:00",
     "end": "07:55:00",
@@ -9432,7 +9432,7 @@
     "block": "MGA, FOM I",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "EXAM Check-In",
+    "desc": "Written Exam Check-In",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9785,7 +9785,7 @@
     "presenter": "Dr. Priya, Dr. Omole, Dr. Meyer"
   },
   {
-    "title": "EXAM (Written)",
+    "title": "Written Exam",
     "date": "11/06/2026",
     "start": "08:00:00",
     "end": "12:00:00",
@@ -9793,7 +9793,7 @@
     "block": "MGA, FOM I",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "EXAM (Written)",
+    "desc": "Written Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9994,7 +9994,7 @@
     "_id": "1778811053268"
   },
   {
-    "title": "NBME EXAM",
+    "title": "Practical Exam",
     "date": "11/06/2026",
     "start": "13:00",
     "end": "17:00",
@@ -10002,7 +10002,7 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "NBME EXAM",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -10013,7 +10013,7 @@
     "_id": "1778814499057"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Practical Exam Check-in",
     "date": "11/06/2026",
     "start": "12:45",
     "end": "12:55",
@@ -10021,18 +10021,18 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "EXAM Check-in",
+    "desc": "Practical Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
-    "group": "",
+    "group": "All Students",
     "location": "MITIE",
     "info": "",
     "presenter": "Dr. Meyer, Dr. Omole",
     "_id": "1779206074882"
   },
   {
-    "title": "EXAM Check-in",
+    "title": "Practical Exam Check-in",
     "date": "09/11/2026",
     "start": "12:45",
     "end": "12:55",
@@ -10040,12 +10040,12 @@
     "block": "MGA",
     "weekNum": 16,
     "week": "Week 16",
-    "desc": "EXAM Check-in",
+    "desc": "Practical Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
     "group": "All Students",
-    "location": "4th Flr Exam Rm 409 EnMed Twr",
+    "location": "MITIE",
     "info": "",
     "presenter": "Dr. Meyer, Dr.Omole",
     "_id": "1779207901085"
@@ -11286,7 +11286,7 @@
     "_id": "c5f1a352-8c27-4e1e-8f35-72de93895497"
   },
   {
-    "title": "[MAND] NBME EXAM Check-In",
+    "title": "[MAND] Practical Exam Check-In",
     "date": "08/28/2026",
     "start": "12:45",
     "end": "12:55",
@@ -11294,7 +11294,7 @@
     "block": "MGA",
     "weekNum": 14,
     "week": "Week 14",
-    "desc": "[MAND] NBME EXAM Check-In",
+    "desc": "[MAND] Practical Exam Check-In",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "No",
@@ -12006,5 +12006,43 @@
     "info": "Please see Canvas for student group assignments and additional information.",
     "presenter": "",
     "_id": "229b1d9d-6e13-404c-ac64-600015324907"
+  },
+  {
+    "title": "Practical Exam Check-In",
+    "date": "10/16/2026",
+    "start": "12:45 PM",
+    "end": "12:55 PM",
+    "category": "Session",
+    "block": "MGA, FOM I",
+    "weekNum": 21,
+    "week": "Week 21",
+    "desc": "Practical Exam Check-In",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "MITIE",
+    "info": "",
+    "presenter": "",
+    "_id": "5cee647b-ff19-42e3-a718-57f54492bf4c"
+  },
+  {
+    "title": "Practical Exam Check-in",
+    "date": "09/25/2026",
+    "start": "12:45 PM",
+    "end": "12:55 PM",
+    "category": "Session",
+    "block": "MGA, FOM I",
+    "weekNum": 18,
+    "week": "Week 18",
+    "desc": "Practical Exam Check-in",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "MITIE",
+    "info": "",
+    "presenter": "",
+    "_id": "65b7da32-36d3-4262-839d-c76be5d657e5"
   }
 ]
