@@ -2983,7 +2983,7 @@
     "presenter": ""
   },
   {
-    "title": "Practical Exam",
+    "title": "NBME Exam",
     "date": "10/16/2026",
     "start": "13:00",
     "end": "17:00",
@@ -2991,7 +2991,7 @@
     "block": "MGA",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -3192,7 +3192,7 @@
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
-    "title": "MITIE Lab Dissection",
+    "title": "MITIE Lab",
     "date": "11/03/2026",
     "start": "13:30",
     "end": "16:30",
@@ -3200,14 +3200,14 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "MITIE Lab Dissection",
+    "desc": "MITIE Lab",
     "calYear": "2030",
     "mCal": "M1",
-    "mand": "Yes",
-    "group": "Group A",
+    "mand": "No",
+    "group": "Group A, Group B",
     "location": "MITIE",
     "_id": "10051226_75",
-    "info": "Palate, nasal cavity, and sinuses",
+    "info": "Review/ CCI",
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
@@ -9956,7 +9956,7 @@
     "_id": "1778811053268"
   },
   {
-    "title": "Practical Exam",
+    "title": "NBME Exam",
     "date": "11/06/2026",
     "start": "13:00",
     "end": "17:00",
@@ -9964,7 +9964,7 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "Practical Exam",
+    "desc": "NBME Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -9975,7 +9975,7 @@
     "_id": "1778814499057"
   },
   {
-    "title": "Practical Exam Check-in",
+    "title": "NBME Exam Check-in",
     "date": "11/06/2026",
     "start": "12:45",
     "end": "12:55",
@@ -9983,7 +9983,7 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "Practical Exam Check-in",
+    "desc": "NBME Exam Check-in",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -11932,15 +11932,15 @@
     "_id": "229b1d9d-6e13-404c-ac64-600015324907"
   },
   {
-    "title": "Practical Exam Check-In",
+    "title": "NBME Exam Check-In",
     "date": "10/16/2026",
-    "start": "12:45 PM",
-    "end": "12:55 PM",
+    "start": "12:45",
+    "end": "12:55",
     "category": "Session",
     "block": "MGA, FOM I",
     "weekNum": 21,
     "week": "Week 21",
-    "desc": "Practical Exam Check-In",
+    "desc": "NBME Exam Check-In",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -11953,9 +11953,9 @@
   {
     "title": "Practical Exam Check-in",
     "date": "09/25/2026",
-    "start": "12:45 PM",
-    "end": "12:55 PM",
-    "category": "Exam Check-In",
+    "start": "12:45",
+    "end": "12:55",
+    "category": "Session",
     "block": "MGA, FOM I",
     "weekNum": 18,
     "week": "Week 18",
@@ -11966,7 +11966,7 @@
     "group": "All Students",
     "location": "MITIE",
     "info": "",
-    "presenter": "Dr. Meyer, Dr. Omole",
+    "presenter": "",
     "_id": "65b7da32-36d3-4262-839d-c76be5d657e5"
   },
   {
