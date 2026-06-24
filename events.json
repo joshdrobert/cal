@@ -7560,8 +7560,8 @@
     "end": "10:00:00",
     "category": "Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "1",
+    "weekNum": 28,
+    "week": "Week 28",
     "desc": "Orthopedic Surgery Session",
     "calYear": "2029",
     "mCal": "M2",
@@ -7570,17 +7570,17 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_1",
     "info": "Musculoskeletal Disorders",
-    "presenter": ""
+    "presenter": "Dr. Brown"
   },
   {
     "title": "Active Learning",
     "date": "12/04/2026",
-    "start": "08:00:00",
-    "end": "10:00:00",
+    "start": "13:00:00",
+    "end": "15:00:00",
     "category": "Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "1",
+    "weekNum": 28,
+    "week": "Week 28",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7589,7 +7589,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_2",
     "info": "Rheumatoid and Autoimmune Disorders, Anti-Rheumatic Drugs",
-    "presenter": ""
+    "presenter": "Dr. Guevara"
   },
   {
     "title": "Active Learning",
@@ -7598,8 +7598,8 @@
     "end": "12:00:00",
     "category": "Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "2",
+    "weekNum": 29,
+    "week": "Week 29",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7608,7 +7608,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_3",
     "info": "Rheumatoid and Autoimmune Disorders, Joint Pathology, Neoplastic Bone Disease, Non-neoplastic Bone Disease, NSAIDs, Anti-Rheumatic Drugs, Drugs affecting Bone Mineralization",
-    "presenter": "Dr. Paolini"
+    "presenter": "Dr. Paolini and Dr. Mobaraki"
   },
   {
     "title": "TBL #1",
@@ -7689,12 +7689,12 @@
   {
     "title": "Active Learning",
     "date": "12/14/2026",
-    "start": "10:00:00",
+    "start": "9:30:00",
     "end": "11:00:00",
     "category": "Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "3",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7703,7 +7703,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_8",
     "info": "Bacterial, Viral, Fungal, and Parasitic Infections of the Skin",
-    "presenter": ""
+    "presenter": "Dr. Ganguly"
   },
   {
     "title": "Active Learning",
@@ -7712,8 +7712,8 @@
     "end": "12:00:00",
     "category": "Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "3",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7722,7 +7722,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_9",
     "info": "Soft Tissue Tumors, Muscle Pathology",
-    "presenter": ""
+    "presenter": "Dr. Paolini"
   },
   {
     "title": "Active Learning & Exam Review",
@@ -7731,8 +7731,8 @@
     "end": "10:30:00",
     "category": "Review Session",
     "block": "MSK",
-    "weekNum": 1,
-    "week": "3",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "Active Learning & Exam Review",
     "calYear": "2029",
     "mCal": "M2",
@@ -7741,7 +7741,7 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "8051226_10",
     "info": "All Handouts",
-    "presenter": ""
+    "presenter": "Dr. Griffin"
   },
   {
     "title": "TBL #2",
@@ -9857,7 +9857,7 @@
     "group": "All Students",
     "location": "2nd Flr Rm 216 EnMed Twr",
     "info": "Musculoskeletal Disorders",
-    "presenter": "",
+    "presenter": "Dr. Brown",
     "_id": "1778765595570"
   },
   {
@@ -11892,44 +11892,6 @@
     "info": "",
     "presenter": "",
     "_id": "ba3a2e96-aa7b-462f-8245-9ade8c69a1f3"
-  },
-  {
-    "title": "Pulmonary Medicine Workshop",
-    "date": "08/17/2026",
-    "start": "13:00",
-    "end": "14:00",
-    "category": "Workshop",
-    "block": "ITDE 613",
-    "weekNum": 13,
-    "week": "Week 13",
-    "desc": "Pulmonary Medicine Workshop",
-    "calYear": "2029",
-    "mCal": "M2",
-    "mand": "Yes",
-    "group": "Group B",
-    "location": "MITIE",
-    "info": "",
-    "presenter": "",
-    "_id": "2a2009ef-19a4-47df-a730-a1afbeda7f0b"
-  },
-  {
-    "title": "Pulmonary Medicine Workshop",
-    "date": "08/17/2026",
-    "start": "14:00",
-    "end": "15:00",
-    "category": "Workshop",
-    "block": "ITDE 613",
-    "weekNum": 13,
-    "week": "Week 13",
-    "desc": "Pulmonary Medicine Workshop",
-    "calYear": "2029",
-    "mCal": "M2",
-    "mand": "No",
-    "group": "Group A",
-    "location": "MITIE",
-    "info": "",
-    "presenter": "",
-    "_id": "1b8a0c29-ffbe-466d-99bc-cd3ed1f95507"
   },
   {
     "title": "Blackout Day",
