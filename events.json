@@ -3137,8 +3137,8 @@
   {
     "title": "MITIE Lab Dissection",
     "date": "10/29/2026",
-    "start": "08:00",
-    "end": "11:00",
+    "start": "09:00",
+    "end": "12:00",
     "category": "Lab",
     "block": "MGA",
     "weekNum": 23,
@@ -3150,7 +3150,7 @@
     "group": "Group A",
     "location": "MITIE",
     "_id": "10051226_72",
-    "info": "Prevertebral region",
+    "info": "Oral cavity and tongue/ prosections",
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
@@ -3169,7 +3169,7 @@
     "group": "Group B",
     "location": "MITIE",
     "_id": "10051226_73",
-    "info": "Oral cavity & tongue/prosections",
+    "info": "Palate, nasal cavity, and sinuses",
     "presenter": "Dr. Meyer, Dr. Omole"
   },
   {
