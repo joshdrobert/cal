@@ -197,7 +197,13 @@ function buildPublishedIcsUrl() {
   const owner = isGithubPages ? hostname.replace(/\.github\.io$/, '') : 'OWNER';
   const segments = window.location.pathname.split('/').filter(Boolean);
   const repo = segments[0] || 'REPO';
-  return `https://${owner}.github.io/${repo}/calendar.ics`;
+  
+  let filename = 'calendar.ics';
+  if (state.activeMCal && state.activeMCal !== 'All') {
+    filename = `calendar-${state.activeMCal.toLowerCase()}.ics`;
+  }
+  
+  return `https://${owner}.github.io/${repo}/${filename}`;
 }
 
 /* ── VIEW CONTROLS ────────────────────────────────────────────── */
@@ -345,6 +351,7 @@ function applyFilters() {
   renderMCalChips();
   renderViewButtons();
   updateHeader();
+  setIcsUrl();
 }
 
 function matchesFilters(event) {
@@ -786,24 +793,33 @@ function indicateCopySuccess() {
 
 /* ── ICS DOWNLOAD ─────────────────────────────────────────────── */
 function downloadFilteredIcs() {
-  const blob = new Blob([buildIcs(state.filtered)], { type: 'text/calendar;charset=utf-8' });
+  let calName = 'EnMed Calendar';
+  let filename = 'calendar.ics';
+
+  if (state.activeMCal && state.activeMCal !== 'All') {
+    calName = `EnMed ${state.activeMCal} Calendar`;
+    filename = `enmed-${state.activeMCal.toLowerCase()}-calendar.ics`;
+  }
+
+  const blob = new Blob([buildIcs(state.filtered, calName)], { type: 'text/calendar;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement('a');
   anchor.href = url;
-  anchor.download = state.filtered.length ? 'calendar.filtered.ics' : 'calendar.ics';
+  anchor.download = state.filtered.length ? filename.replace('.ics', '.filtered.ics') : filename;
   document.body.appendChild(anchor);
   anchor.click();
   anchor.remove();
   window.setTimeout(() => URL.revokeObjectURL(url), 0);
 }
 
-function buildIcs(events) {
+function buildIcs(events, calName) {
   const lines = [
     'BEGIN:VCALENDAR',
     'PRODID:-//GitHub Pages Calendar Mirror//EN',
     'VERSION:2.0',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
+    `X-WR-CALNAME:${calName}`,
     ...timezoneComponent(),
   ];
 
