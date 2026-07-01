@@ -1,3 +1,7 @@
+/* ═══════════════════════════════════════════════════════════════
+   EnMed Calendar – Apple-Inspired Calendar Application
+   ═══════════════════════════════════════════════════════════════ */
+
 const TIMEZONE = 'America/Chicago';
 const EVENTS_PATH = 'events.json';
 const MCAL_OPTIONS = ['All', 'M0', 'M1', 'M2', 'M3', 'M4'];
@@ -72,6 +76,9 @@ function bindElements() {
     'resultSummary',
     'mCalChips',
     'calendarView',
+    'eventModal',
+    'closeModal',
+    'modalBody',
   ]) {
     els[id] = document.getElementById(id);
   }
@@ -94,8 +101,63 @@ function bindEvents() {
   els.prevPeriod.addEventListener('click', () => shiftPeriod(-1));
   els.nextPeriod.addEventListener('click', () => shiftPeriod(1));
   els.todayPeriod.addEventListener('click', () => setAnchorDate(getChicagoToday()));
+
+  // Modal close
+  els.closeModal.addEventListener('click', closeEventModal);
+  els.eventModal.addEventListener('click', (e) => {
+    if (e.target === els.eventModal) closeEventModal();
+  });
+
+  // Keyboard: Escape closes modal, arrow keys navigate
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeEventModal();
+    if (e.key === 'ArrowLeft' && !isModalOpen()) shiftPeriod(-1);
+    if (e.key === 'ArrowRight' && !isModalOpen()) shiftPeriod(1);
+  });
+
+  // Swipe navigation for touch
+  setupSwipeNavigation();
 }
 
+/* ── SWIPE NAVIGATION ─────────────────────────────────────────── */
+function setupSwipeNavigation() {
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let swiping = false;
+
+  const board = document.querySelector('.cal-board');
+  if (!board) return;
+
+  board.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    swiping = true;
+  }, { passive: true });
+
+  board.addEventListener('touchend', (e) => {
+    if (!swiping) return;
+    swiping = false;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    // Only trigger on horizontal swipes with enough distance
+    if (absDx > 60 && absDx > absDy * 1.5) {
+      if (dx > 0) {
+        shiftPeriod(-1);
+      } else {
+        shiftPeriod(1);
+      }
+    }
+  }, { passive: true });
+}
+
+function isModalOpen() {
+  return els.eventModal.classList.contains('is-open');
+}
+
+/* ── URL STATE ────────────────────────────────────────────────── */
 function syncStateFromUrl() {
   const params = new URLSearchParams(window.location.search);
   state.hasUrlDate = params.has('date');
@@ -109,6 +171,22 @@ function syncStateFromUrl() {
   state.activeMCal = MCAL_OPTIONS.includes(params.get('mCal')) ? params.get('mCal') : 'All';
 }
 
+function syncUrlFromState() {
+  const params = new URLSearchParams();
+  if (state.view !== 'month') params.set('view', state.view);
+  params.set('date', formatDateInput(state.anchorDate));
+  if (state.filters.query) params.set('q', state.filters.query);
+  if (state.filters.category) params.set('category', state.filters.category);
+  if (state.filters.block) params.set('block', state.filters.block);
+  if (state.activeMCal && state.activeMCal !== 'All') params.set('mCal', state.activeMCal);
+  if (state.filters.mand) params.set('mand', state.filters.mand);
+  if (state.filters.group) params.set('group', state.filters.group);
+
+  const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}`;
+  window.history.replaceState({}, '', nextUrl);
+}
+
+/* ── ICS ──────────────────────────────────────────────────────── */
 function setIcsUrl() {
   els.icsUrl.value = buildPublishedIcsUrl();
 }
@@ -122,17 +200,17 @@ function buildPublishedIcsUrl() {
   return `https://${owner}.github.io/${repo}/calendar.ics`;
 }
 
+/* ── VIEW CONTROLS ────────────────────────────────────────────── */
 function renderViewButtons() {
   const buttons = [
-    [els.viewMonth, 'month', 'Month'],
-    [els.viewWeek, 'week', 'Week'],
-    [els.viewDay, 'day', 'Day'],
+    [els.viewMonth, 'month'],
+    [els.viewWeek, 'week'],
+    [els.viewDay, 'day'],
   ];
 
-  for (const [button, view, label] of buttons) {
+  for (const [button, view] of buttons) {
     button.classList.toggle('is-active', state.view === view);
     button.setAttribute('aria-pressed', String(state.view === view));
-    button.textContent = label;
   }
 }
 
@@ -159,6 +237,7 @@ function shiftPeriod(direction) {
   setAnchorDate(addDays(state.anchorDate, direction * step));
 }
 
+/* ── FILTERS ──────────────────────────────────────────────────── */
 function updateFiltersFromInputs() {
   state.filters.query = els.searchInput.value.trim();
   state.filters.category = els.categoryFilter.value;
@@ -177,21 +256,6 @@ function syncInputsFromFilters() {
   els.groupFilter.value = state.filters.group;
 }
 
-function syncUrlFromState() {
-  const params = new URLSearchParams();
-  if (state.view !== 'month') params.set('view', state.view);
-  params.set('date', formatDateInput(state.anchorDate));
-  if (state.filters.query) params.set('q', state.filters.query);
-  if (state.filters.category) params.set('category', state.filters.category);
-  if (state.filters.block) params.set('block', state.filters.block);
-  if (state.activeMCal && state.activeMCal !== 'All') params.set('mCal', state.activeMCal);
-  if (state.filters.mand) params.set('mand', state.filters.mand);
-  if (state.filters.group) params.set('group', state.filters.group);
-
-  const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ''}`;
-  window.history.replaceState({}, '', nextUrl);
-}
-
 function resetFilters() {
   state.filters = { query: '', category: '', block: '', mand: '', group: '' };
   state.activeMCal = 'All';
@@ -205,6 +269,26 @@ function resetFilters() {
   syncUrlFromState();
 }
 
+function populateFilterOptions(events) {
+  const fields = [
+    ['category', els.categoryFilter],
+    ['block', els.blockFilter],
+    ['mand', els.mandFilter],
+    ['group', els.groupFilter],
+  ];
+
+  for (const [field, select] of fields) {
+    const values = [...new Set(events.map((event) => getFieldValue(event.raw[field]) || getMandatoryValue(event.raw[field])))]
+      .filter(Boolean)
+      .sort((a, b) => a.localeCompare(b));
+
+    select.innerHTML = [`<option value="">All</option>`, ...values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`)].join('');
+  }
+
+  syncInputsFromFilters();
+}
+
+/* ── EVENTS NORMALIZATION ─────────────────────────────────────── */
 function normalizeEvents(events) {
   return events
     .map((event, index) => normalizeEvent(event, index))
@@ -246,6 +330,7 @@ function compareEvents(a, b) {
   return a.startKey - b.startKey || a.endKey - b.endKey || a.index - b.index;
 }
 
+/* ── APPLY FILTERS ────────────────────────────────────────────── */
 function applyFilters() {
   const nowKey = getChicagoNowKey();
   state.filtered = state.events.filter((event) => matchesFilters(event));
@@ -285,15 +370,16 @@ function matchesFilters(event) {
   return true;
 }
 
+/* ── RENDER CALENDAR ──────────────────────────────────────────── */
 function renderCalendar(nowKey) {
   els.calendarView.innerHTML = '';
 
   const range = getViewRange(state.view, state.anchorDate);
   const eventsInView = state.filtered.filter((event) => isDateInRange(event.date, range.start, range.end));
 
-  if (!eventsInView.length) {
-    els.calendarView.appendChild(makeMessage('No matching events found for this view. Try another mCal chip, change the date, or clear one of the filters.'));
-    els.resultSummary.textContent = '0 events matched';
+  if (!eventsInView.length && state.view !== 'month') {
+    els.calendarView.appendChild(makeMessage('No matching events for this period. Try another date, filter, or calendar.'));
+    els.resultSummary.textContent = '0 events';
     return;
   }
 
@@ -305,14 +391,20 @@ function renderCalendar(nowKey) {
     els.calendarView.appendChild(renderDayAgenda(eventsInView, nowKey));
   }
 
-  els.resultSummary.textContent = `${eventsInView.length} event${eventsInView.length === 1 ? '' : 's'} in view`;
+  els.resultSummary.textContent = `${eventsInView.length} event${eventsInView.length === 1 ? '' : 's'}`;
 }
 
+/* ── MONTH GRID ───────────────────────────────────────────────── */
 function renderMonthGrid(events, nowKey) {
   const container = document.createElement('div');
-  container.className = 'calendar-grid month-grid';
+  container.className = 'month-grid';
 
-  for (const dayName of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']) {
+  // Weekday headers
+  const dayNames = window.innerWidth < 680
+    ? ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+    : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  for (const dayName of dayNames) {
     const header = document.createElement('div');
     header.className = 'month-weekday';
     header.textContent = dayName;
@@ -322,46 +414,45 @@ function renderMonthGrid(events, nowKey) {
   const monthStart = startOfMonth(state.anchorDate);
   const gridStart = startOfWeek(monthStart);
   const eventsByDay = groupEventsByDate(events);
+  const isMobile = window.innerWidth < 680;
+  const maxVisible = isMobile ? 2 : 3;
 
   for (let offset = 0; offset < 42; offset += 1) {
     const day = addDays(gridStart, offset);
     const dayKey = formatDateInput(day);
     const dayEvents = (eventsByDay.get(dayKey) || []).sort(compareEvents);
-    const cell = document.createElement('button');
-    cell.type = 'button';
+    const cell = document.createElement('div');
     cell.className = 'month-day-cell';
     if (isSameDate(day, getChicagoToday())) cell.classList.add('is-today');
     if (isSameDate(day, state.anchorDate)) cell.classList.add('is-selected');
     if (!isSameMonth(day, monthStart)) cell.classList.add('is-outside-month');
-    cell.addEventListener('click', () => setAnchorDate(day));
 
+    cell.addEventListener('click', () => {
+      setAnchorDate(day);
+      setView('day');
+    });
+
+    // Day number header
     const dayHeader = document.createElement('div');
     dayHeader.className = 'month-day-header';
     const dayNumber = document.createElement('span');
     dayNumber.className = 'month-day-number';
     dayNumber.textContent = String(day.day);
     dayHeader.appendChild(dayNumber);
-
-    if (isSameDate(day, getChicagoToday())) {
-      const todayChip = document.createElement('span');
-      todayChip.className = 'month-day-chip';
-      todayChip.textContent = 'Today';
-      dayHeader.appendChild(todayChip);
-    }
-
     cell.appendChild(dayHeader);
 
+    // Event chips
     const eventList = document.createElement('div');
     eventList.className = 'month-day-events';
 
-    for (const event of dayEvents.slice(0, 3)) {
+    for (const event of dayEvents.slice(0, maxVisible)) {
       eventList.appendChild(buildMonthEventChip(event, nowKey));
     }
 
-    if (dayEvents.length > 3) {
+    if (dayEvents.length > maxVisible) {
       const more = document.createElement('div');
       more.className = 'month-day-more';
-      more.textContent = `+${dayEvents.length - 3} more`;
+      more.textContent = `+${dayEvents.length - maxVisible}`;
       eventList.appendChild(more);
     }
 
@@ -376,31 +467,33 @@ function buildMonthEventChip(event, nowKey) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'month-event-chip';
+  button.dataset.mcal = getFieldValue(event.raw.mCal);
+
   if (event.endKey < nowKey) {
     button.classList.add('is-past');
   }
-
-  const time = document.createElement('span');
-  time.className = 'month-event-time';
-  time.textContent = formatShortTime(event.start);
 
   const title = document.createElement('span');
   title.className = 'month-event-title';
   title.textContent = event.title;
 
+  const time = document.createElement('span');
+  time.className = 'month-event-time';
+  time.textContent = formatShortTime(event.start);
+
   button.append(time, title);
   button.title = buildEventTooltip(event);
   button.addEventListener('click', (ev) => {
     ev.stopPropagation();
-    setAnchorDate(event.date);
-    setView('day');
+    openEventModal(event);
   });
   return button;
 }
 
+/* ── WEEK GRID ────────────────────────────────────────────────── */
 function renderWeekGrid(events, nowKey) {
   const container = document.createElement('div');
-  container.className = 'calendar-grid week-grid';
+  container.className = 'week-grid';
 
   const start = startOfWeek(state.anchorDate);
   const eventsByDay = groupEventsByDate(events);
@@ -417,7 +510,10 @@ function renderWeekGrid(events, nowKey) {
     header.type = 'button';
     header.className = 'week-column-header';
     header.innerHTML = `<span>${weekdayLong(day)}</span><strong>${day.month}/${day.day}</strong>`;
-    header.addEventListener('click', () => setAnchorDate(day));
+    header.addEventListener('click', () => {
+      setAnchorDate(day);
+      setView('day');
+    });
 
     const items = document.createElement('div');
     items.className = 'week-column-events';
@@ -440,32 +536,41 @@ function renderWeekGrid(events, nowKey) {
   return container;
 }
 
+/* ── DAY VIEW ─────────────────────────────────────────────────── */
 function renderDayAgenda(events, nowKey) {
   const container = document.createElement('div');
   container.className = 'day-agenda';
 
   const header = document.createElement('div');
   header.className = 'day-agenda-header';
-  header.innerHTML = `<div><p class="eyebrow">Day</p><h3>${formatLongDate(state.anchorDate)}</h3></div>`;
+  header.innerHTML = `<div><p class="eyebrow">${weekdayFull(state.anchorDate)}</p><h3>${formatLongDate(state.anchorDate)}</h3></div>`;
   container.appendChild(header);
 
   const items = document.createElement('div');
   items.className = 'day-agenda-items';
 
-  for (const event of events.sort(compareEvents)) {
-    items.appendChild(buildAgendaCard(event, nowKey, 'full'));
+  if (!events.length) {
+    items.appendChild(makeMessage('No events scheduled for this day.'));
+  } else {
+    for (const event of events.sort(compareEvents)) {
+      items.appendChild(buildAgendaCard(event, nowKey, 'full'));
+    }
   }
 
   container.appendChild(items);
   return container;
 }
 
+/* ── AGENDA CARD ──────────────────────────────────────────────── */
 function buildAgendaCard(event, nowKey, mode) {
   const article = document.createElement('article');
   article.className = `agenda-card agenda-card--${mode}`;
   if (event.endKey < nowKey) {
     article.classList.add('is-past');
   }
+
+  // Make cards clickable to open modal
+  article.addEventListener('click', () => openEventModal(event));
 
   const topline = document.createElement('div');
   topline.className = 'agenda-card-topline';
@@ -483,23 +588,34 @@ function buildAgendaCard(event, nowKey, mode) {
 
   const badge = document.createElement('span');
   badge.className = 'agenda-card-badge';
-  badge.textContent = getFieldValue(event.raw.mCal) || 'No mCal';
+  badge.dataset.mcal = getFieldValue(event.raw.mCal);
+  badge.textContent = getFieldValue(event.raw.mCal) || '—';
 
   topline.append(heading, badge);
   article.appendChild(topline);
 
+  // In compact mode, skip details
+  if (mode === 'compact') return article;
+
   const meta = document.createElement('p');
   meta.className = 'agenda-card-meta';
-  meta.textContent = [stringify(event.raw.location), stringify(event.raw.presenter)].filter(Boolean).join(' · ');
-  article.appendChild(meta);
+  const metaText = [stringify(event.raw.location), stringify(event.raw.presenter)].filter(Boolean).join(' · ');
+  if (metaText) {
+    meta.textContent = metaText;
+    article.appendChild(meta);
+  }
 
   const desc = document.createElement('p');
   desc.className = 'agenda-card-desc';
-  desc.textContent = [stringify(event.raw.desc), stringify(event.raw.info)].filter(Boolean).join(' · ');
-  article.appendChild(desc);
+  const descText = [stringify(event.raw.desc), stringify(event.raw.info)].filter(Boolean).join(' · ');
+  if (descText) {
+    desc.textContent = descText;
+    article.appendChild(desc);
+  }
 
   const fields = document.createElement('dl');
   fields.className = 'agenda-card-fields';
+  let hasFields = false;
   for (const [label, value] of [
     ['Category', event.raw.category],
     ['Block', event.raw.block],
@@ -508,17 +624,92 @@ function buildAgendaCard(event, nowKey, mode) {
   ]) {
     const text = stringify(value);
     if (!text) continue;
+    hasFields = true;
     const dt = document.createElement('dt');
     dt.textContent = label;
     const dd = document.createElement('dd');
     dd.textContent = text;
     fields.append(dt, dd);
   }
-  article.appendChild(fields);
+  if (hasFields) article.appendChild(fields);
 
   return article;
 }
 
+/* ── EVENT MODAL ──────────────────────────────────────────────── */
+function openEventModal(event) {
+  const body = els.modalBody;
+  const mCalValue = getFieldValue(event.raw.mCal);
+
+  body.innerHTML = '';
+
+  // Badge
+  const badge = document.createElement('div');
+  badge.className = 'modal-event-badge';
+  badge.textContent = mCalValue || 'No Calendar';
+  badge.dataset.mcal = mCalValue;
+  // Apply same color as agenda badge
+  const badgeColors = {
+    'M0': { bg: 'rgba(0,122,255,0.1)', color: '#0055b3' },
+    'M1': { bg: 'rgba(52,199,89,0.1)', color: '#1a8a3e' },
+    'M2': { bg: 'rgba(255,149,0,0.1)', color: '#b37400' },
+    'M3': { bg: 'rgba(175,82,222,0.1)', color: '#7b3a9e' },
+    'M4': { bg: 'rgba(255,59,48,0.1)', color: '#cc1a11' },
+    'Program-Wide': { bg: 'rgba(80,0,0,0.06)', color: '#500000' },
+  };
+  const bc = badgeColors[mCalValue] || { bg: 'rgba(0,0,0,0.05)', color: '#86868b' };
+  badge.style.background = bc.bg;
+  badge.style.color = bc.color;
+  body.appendChild(badge);
+
+  // Title
+  const title = document.createElement('h2');
+  title.className = 'modal-event-title';
+  title.textContent = event.title;
+  body.appendChild(title);
+
+  // Time
+  const time = document.createElement('p');
+  time.className = 'modal-event-time';
+  time.textContent = `${formatLongDate(event.date)} · ${formatTimeRange(event.date, event.start, event.end)}`;
+  body.appendChild(time);
+
+  // Details grid
+  const details = document.createElement('div');
+  details.className = 'modal-event-detail';
+
+  const fields = [
+    ['Location', event.raw.location],
+    ['Presenter', event.raw.presenter],
+    ['Category', event.raw.category],
+    ['Block', event.raw.block],
+    ['Mandatory', event.raw.mand],
+    ['Group', event.raw.group],
+    ['Week', event.raw.week],
+    ['Description', event.raw.desc],
+    ['Info', event.raw.info],
+  ];
+
+  for (const [label, value] of fields) {
+    const text = stringify(value);
+    if (!text) continue;
+    const row = document.createElement('div');
+    row.className = 'modal-detail-row';
+    row.innerHTML = `<span class="modal-detail-label">${escapeHtml(label)}</span><span class="modal-detail-value">${escapeHtml(text)}</span>`;
+    details.appendChild(row);
+  }
+
+  body.appendChild(details);
+  els.eventModal.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeEventModal() {
+  els.eventModal.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
+
+/* ── STATS ────────────────────────────────────────────────────── */
 function renderStats(nowKey) {
   const upcoming = state.filtered.filter((event) => event.endKey >= nowKey).length;
   els.eventCount.textContent = String(state.events.length);
@@ -526,10 +717,11 @@ function renderStats(nowKey) {
   els.activeMCal.textContent = state.activeMCal;
 }
 
+/* ── MCAL CHIPS ───────────────────────────────────────────────── */
 function renderMCalChips() {
   els.mCalChips.innerHTML = MCAL_OPTIONS.map((value) => {
     const active = value === state.activeMCal ? ' is-active' : '';
-    return `<button type="button" class="mcal-chip${active}" data-mcal="${escapeHtml(value)}" aria-pressed="${value === state.activeMCal}">${escapeHtml(value)}</button>`;
+    return `<button type="button" class="mcal-chip${active}" data-mcal="${escapeHtml(value)}" aria-pressed="${value === state.activeMCal}">${escapeHtml(value === 'All' ? 'All Calendars' : value)}</button>`;
   }).join('');
 
   els.mCalChips.querySelectorAll('button[data-mcal]').forEach((button) => {
@@ -541,25 +733,28 @@ function renderMCalChips() {
   });
 }
 
-function populateFilterOptions(events) {
-  const fields = [
-    ['category', els.categoryFilter],
-    ['block', els.blockFilter],
-    ['mand', els.mandFilter],
-    ['group', els.groupFilter],
-  ];
-
-  for (const [field, select] of fields) {
-    const values = [...new Set(events.map((event) => getFieldValue(event.raw[field]) || getMandatoryValue(event.raw[field])))]
-      .filter(Boolean)
-      .sort((a, b) => a.localeCompare(b));
-
-    select.innerHTML = ['<option value="">All</option>', ...values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`)].join('');
-  }
-
-  syncInputsFromFilters();
+/* ── HEADER ───────────────────────────────────────────────────── */
+function updateHeader() {
+  els.calendarTitle.textContent = getViewTitle(state.view, state.anchorDate);
 }
 
+function getViewTitle(view, date) {
+  if (view === 'month') {
+    return `${monthNameFull(date.month)} ${date.year}`;
+  }
+
+  if (view === 'week') {
+    const range = getViewRange('week', date);
+    if (range.start.month === range.end.month) {
+      return `${monthNameFull(range.start.month)} ${range.start.day}–${range.end.day}, ${range.start.year}`;
+    }
+    return `${monthName(range.start.month)} ${range.start.day} – ${monthName(range.end.month)} ${range.end.day}`;
+  }
+
+  return `${weekdayFull(date)}, ${monthNameFull(date.month)} ${date.day}`;
+}
+
+/* ── CLIPBOARD ────────────────────────────────────────────────── */
 function copyIcsUrl() {
   const text = els.icsUrl.value;
   if (navigator.clipboard?.writeText) {
@@ -579,12 +774,17 @@ function fallbackCopy(text) {
 function indicateCopySuccess() {
   const button = els.copyIcsUrl;
   const original = button.textContent;
-  button.textContent = 'Copied';
+  button.textContent = 'Copied!';
+  button.style.background = 'var(--teal-soft)';
+  button.style.color = 'var(--teal)';
   window.setTimeout(() => {
     button.textContent = original;
+    button.style.background = '';
+    button.style.color = '';
   }, 1500);
 }
 
+/* ── ICS DOWNLOAD ─────────────────────────────────────────────── */
 function downloadFilteredIcs() {
   const blob = new Blob([buildIcs(state.filtered)], { type: 'text/calendar;charset=utf-8' });
   const url = URL.createObjectURL(blob);
@@ -655,33 +855,15 @@ function timezoneComponent() {
   ];
 }
 
-function updateHeader() {
-  els.calendarTitle.textContent = getViewTitle(state.view, state.anchorDate);
-}
-
-function getViewTitle(view, date) {
-  if (view === 'month') {
-    return `${monthName(date.month)} ${date.year}`;
-  }
-
-  if (view === 'week') {
-    const range = getViewRange('week', date);
-    return `${formatLongDate(range.start)} – ${formatLongDate(range.end)}`;
-  }
-
-  return formatLongDate(date);
-}
-
+/* ── HELPERS ──────────────────────────────────────────────────── */
 function getViewRange(view, date) {
   if (view === 'month') {
     return { start: startOfMonth(date), end: endOfMonth(date) };
   }
-
   if (view === 'week') {
     const start = startOfWeek(date);
     return { start, end: addDays(start, 6) };
   }
-
   return { start: date, end: date };
 }
 
@@ -698,14 +880,13 @@ function groupEventsByDate(events) {
 }
 
 function buildEventTooltip(event) {
-  return [event.title, formatTimeRange(event.date, event.start, event.end), stringify(event.raw.location)].filter(Boolean).join(' • ');
+  return [event.title, formatTimeRange(event.date, event.start, event.end), stringify(event.raw.location)].filter(Boolean).join(' · ');
 }
 
 function setLoadedAt() {
   els.lastUpdated.textContent = new Intl.DateTimeFormat('en-US', {
     month: 'short',
     day: 'numeric',
-    year: 'numeric',
     hour: 'numeric',
     minute: '2-digit',
   }).format(new Date());
@@ -714,7 +895,7 @@ function setLoadedAt() {
 function renderError(error) {
   console.error(error);
   els.calendarView.innerHTML = '';
-  const message = makeMessage('Unable to load events.json. Check the source feed or refresh after the Action runs.');
+  const message = makeMessage('Unable to load events. Check the source feed or try again later.');
   message.classList.add('error-state');
   els.calendarView.appendChild(message);
   els.resultSummary.textContent = 'Feed unavailable';
@@ -749,10 +930,9 @@ function buildSearchText(event) {
     .join(' ');
 }
 
+/* ── DATE / TIME UTILITIES ────────────────────────────────────── */
 function parseDateInput(value) {
-  if (!value) {
-    return null;
-  }
+  if (!value) return null;
 
   const trimmed = String(value).trim();
   const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(trimmed);
@@ -764,9 +944,7 @@ function parseDateInput(value) {
   }
 
   const mmddyyyy = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/.exec(trimmed);
-  if (!mmddyyyy) {
-    return null;
-  }
+  if (!mmddyyyy) return null;
 
   const month = Number(mmddyyyy[1]);
   const day = Number(mmddyyyy[2]);
@@ -776,15 +954,11 @@ function parseDateInput(value) {
 
 function parseTime(value) {
   const match = /^(\d{1,2}):(\d{2})(?::\d{2})?$/.exec(stringify(value));
-  if (!match) {
-    return null;
-  }
+  if (!match) return null;
 
   const hour = Number(match[1]);
   const minute = Number(match[2]);
-  if (hour > 23 || minute > 59) {
-    return null;
-  }
+  if (hour > 23 || minute > 59) return null;
 
   return { hour, minute };
 }
@@ -871,7 +1045,7 @@ function fromUtcDate(date) {
 }
 
 function formatLongDate(date) {
-  return `${monthName(date.month)} ${date.day}, ${date.year}`;
+  return `${monthNameFull(date.month)} ${date.day}, ${date.year}`;
 }
 
 function formatDateInput(date) {
@@ -888,10 +1062,6 @@ function formatShortTime(time) {
   }).format(fakeDate);
 }
 
-function formatTimeLabel(time) {
-  return formatShortTime(time);
-}
-
 function timezoneAbbrev(date, time) {
   const utcDate = new Date(Date.UTC(date.year, date.month - 1, date.day, time.hour, time.minute));
   return new Intl.DateTimeFormat('en-US', {
@@ -903,15 +1073,23 @@ function timezoneAbbrev(date, time) {
 }
 
 function formatTimeRange(date, start, end) {
-  return `${formatTimeLabel(start)} – ${formatTimeLabel(end)} ${timezoneAbbrev(date, start)}`;
+  return `${formatShortTime(start)} – ${formatShortTime(end)} ${timezoneAbbrev(date, start)}`;
 }
 
 function monthName(month) {
-  return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][month - 1] || 'Unknown';
+  return ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][month - 1] || '';
+}
+
+function monthNameFull(month) {
+  return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month - 1] || '';
 }
 
 function weekdayLong(date) {
   return new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'short' }).format(toUtcDate(date));
+}
+
+function weekdayFull(date) {
+  return new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'long' }).format(toUtcDate(date));
 }
 
 function isSameDate(a, b) {
@@ -933,6 +1111,10 @@ function dateToNumber(date) {
 
 function buildIcsDateTime(date, time) {
   return `${date.year}${pad(date.month)}${pad(date.day)}T${pad(time.hour)}${pad(time.minute)}00`;
+}
+
+function formatUtcStamp(date) {
+  return `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`;
 }
 
 function foldIcsLines(lines) {
@@ -972,15 +1154,9 @@ function getFieldValue(value) {
 
 function getMandatoryValue(value) {
   const normalized = stringify(value).toLowerCase();
-  if (!normalized) {
-    return '';
-  }
-  if (['yes', 'y', 'true', '1'].includes(normalized)) {
-    return 'Yes';
-  }
-  if (['no', 'n', 'false', '0'].includes(normalized)) {
-    return 'No';
-  }
+  if (!normalized) return '';
+  if (['yes', 'y', 'true', '1'].includes(normalized)) return 'Yes';
+  if (['no', 'n', 'false', '0'].includes(normalized)) return 'No';
   return stringify(value);
 }
 

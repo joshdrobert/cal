@@ -2,167 +2,205 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light" />
-    <title>EnMed Calendar Mirror</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>EnMed Calendar</title>
     <meta
       name="description"
-      content="A static GitHub Pages mirror for the EnMed PCT calendar feed with ICS subscription support."
+      content="EnMed PCT Calendar – Subscribe, download, and browse the academic calendar for M0, M1, M2, and beyond."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <nav class="top-nav" aria-label="Primary">
-        <a href="index.html" class="top-nav-link is-active">Dashboard</a>
-        <a href="calendar.html" class="top-nav-link">Calendar view</a>
+    <div class="dash">
+      <!-- ── NAV ──────────────────────────────────────────── -->
+      <nav class="dash-nav" aria-label="Primary">
+        <span class="dash-logo">EnMed Calendar</span>
+        <div class="dash-nav-links">
+          <a href="index.html" class="dash-nav-link is-active">Home</a>
+          <a href="calendar.html" class="dash-nav-link">Calendar</a>
+        </div>
       </nav>
 
-      <header class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">EnMed PCT Calendar Mirror</p>
-          <h1>Clean calendar access from the public JSON feed.</h1>
-          <p class="lede">
-            This site mirrors the public event feed, generates a stable ICS export, and gives you
-            a fast dashboard for browsing, searching, and filtering by M0/M1/M2/M3/M4 and more.
-          </p>
+      <!-- ── HERO ─────────────────────────────────────────── -->
+      <header class="dash-hero">
+        <p class="dash-hero-eyebrow">EnMed PreClerkship Team</p>
+        <h1 class="dash-hero-title">Your Academic Calendar,<br>Always Up to Date.</h1>
+        <p class="dash-hero-subtitle">
+          Browse, filter, and subscribe to the EnMed schedule. Updates sync automatically —
+          no manual downloads needed after you subscribe.
+        </p>
+        <div class="dash-hero-actions">
+          <a href="calendar.html" class="dash-btn dash-btn-primary">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7h12M5 1v4M11 1v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Open Calendar
+          </a>
+          <button id="downloadIcsBtn" type="button" class="dash-btn dash-btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download ICS
+          </button>
         </div>
-
-        <section class="subscribe-card" aria-labelledby="subscribe-title">
-          <div>
-            <p class="eyebrow">Subscribe in Google Calendar</p>
-            <h2 id="subscribe-title">Add the feed once, then let it refresh automatically.</h2>
-            <p class="subtle">
-              Use the published GitHub Pages ICS URL below. Google Calendar may take several hours to refresh.
-            </p>
-          </div>
-
-          <div class="url-row">
-            <input id="icsUrl" type="text" readonly aria-label="ICS subscription URL" />
-            <button id="copyIcsUrl" type="button">Copy URL</button>
-          </div>
-
-          <p class="url-hint">Google Calendar → Other calendars + → From URL → paste the ICS URL.</p>
-          <p class="url-hint">Pattern: https://OWNER.github.io/REPO/calendar.ics</p>
-          <p class="url-hint"><strong>If you want M0, M1, M2, and other specific calendars, use the filtered download below.</strong></p>
-          <p class="url-hint"><a href="calendar.html">Open the calendar view with M0/M1/M2 chips.</a></p>
-        </section>
+        <div class="dash-hero-stats">
+          <div class="dash-stat"><strong id="eventCount">—</strong><span>Total Events</span></div>
+          <div class="dash-stat"><strong id="upcomingCount">—</strong><span>Upcoming</span></div>
+          <div class="dash-stat"><strong id="lastUpdated">—</strong><span>Last Synced</span></div>
+        </div>
       </header>
 
-      <main class="content">
-        <section class="controls-panel" aria-labelledby="controls-title">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Filters</p>
-              <h2 id="controls-title">Search and narrow the feed</h2>
+      <!-- ── FEATURES ──────────────────────────────────────── -->
+      <main class="dash-content">
+
+        <!-- Subscribe section -->
+        <section class="dash-section" aria-labelledby="subscribe-title">
+          <div class="dash-section-header">
+            <div class="dash-section-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10C3 6.13 6.13 3 10 3s7 3.13 7 7-3.13 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M6 13c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="16" r="1" fill="currentColor"/></svg>
             </div>
-            <button id="resetFilters" type="button" class="ghost-button">Reset filters</button>
-          </div>
-
-          <div class="filters-grid">
-            <label>
-              <span>Search</span>
-              <input id="searchInput" type="search" placeholder="Title, description, info, presenter, location" />
-            </label>
-            <label>
-              <span>Category</span>
-              <select id="categoryFilter"></select>
-            </label>
-            <label>
-              <span>Block</span>
-              <select id="blockFilter"></select>
-            </label>
-            <label>
-              <span>mCal</span>
-              <select id="mCalFilter"></select>
-            </label>
-            <label>
-              <span>Mandatory</span>
-              <select id="mandFilter"></select>
-            </label>
-            <label>
-              <span>Group</span>
-              <select id="groupFilter"></select>
-            </label>
-          </div>
-
-          <div class="actions-row">
-            <button id="downloadFilteredIcs" type="button" class="primary-button">Download filtered ICS</button>
-            <div class="chip-row" id="activeFilterChips"></div>
-          </div>
-        </section>
-
-        <section class="stats-grid" aria-label="Calendar summary">
-          <article>
-            <strong id="eventCount">0</strong>
-            <span>Events</span>
-          </article>
-          <article>
-            <strong id="upcomingCount">0</strong>
-            <span>Upcoming</span>
-          </article>
-          <article>
-            <strong id="mCalCount">0</strong>
-            <span>mCal values</span>
-          </article>
-          <article>
-            <strong id="lastUpdated">--</strong>
-            <span>Last updated</span>
-          </article>
-        </section>
-
-        <section class="calendar-panel" aria-labelledby="calendar-title">
-          <div class="section-head">
             <div>
-              <p class="eyebrow">Calendar</p>
-              <h2 id="calendar-title">Upcoming events first</h2>
-            </div>
-            <p id="resultSummary" class="subtle"></p>
-          </div>
-          <div id="eventList" class="event-list" aria-live="polite"></div>
-        </section>
-
-        <section class="help-panel" aria-labelledby="help-title">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">How it works</p>
-              <h2 id="help-title">Simple static hosting, no build step</h2>
+              <h2 id="subscribe-title">Subscribe to Your Calendar</h2>
+              <p class="dash-section-desc">Add the ICS URL to Google Calendar, Apple Calendar, or Outlook. It will refresh automatically — no re-downloading required.</p>
             </div>
           </div>
 
-          <div class="help-grid">
-            <article>
-              <h3>1. Mirror the JSON feed</h3>
-              <p>The GitHub Action downloads the public events.json file and saves it into this repo.</p>
-            </article>
-            <article>
-              <h3>2. Generate ICS</h3>
-              <p>The Node script converts the JSON into a timezone-aware calendar.ics export.</p>
-            </article>
-            <article>
-              <h3>3. Publish to Pages</h3>
-              <p>GitHub Pages serves this dashboard plus the generated ICS file directly from the repo.</p>
-            </article>
+          <div class="dash-subscribe-grid">
+            <div class="dash-subscribe-card">
+              <span class="dash-subscribe-label">Full Calendar (All Classes)</span>
+              <div class="dash-url-row">
+                <input id="icsUrlFull" type="text" readonly value="" aria-label="Full calendar ICS URL" />
+                <button type="button" class="dash-copy-btn" data-copy="icsUrlFull">Copy</button>
+              </div>
+            </div>
+            <div class="dash-subscribe-card">
+              <span class="dash-subscribe-label">M0 Pre-Matriculation</span>
+              <div class="dash-url-row">
+                <input id="icsUrlM0" type="text" readonly value="" aria-label="M0 ICS URL" />
+                <button type="button" class="dash-copy-btn" data-copy="icsUrlM0">Copy</button>
+              </div>
+            </div>
+            <div class="dash-subscribe-card">
+              <span class="dash-subscribe-label">M1 Calendar</span>
+              <div class="dash-url-row">
+                <input id="icsUrlM1" type="text" readonly value="" aria-label="M1 ICS URL" />
+                <button type="button" class="dash-copy-btn" data-copy="icsUrlM1">Copy</button>
+              </div>
+            </div>
+            <div class="dash-subscribe-card">
+              <span class="dash-subscribe-label">M2 Calendar</span>
+              <div class="dash-url-row">
+                <input id="icsUrlM2" type="text" readonly value="" aria-label="M2 ICS URL" />
+                <button type="button" class="dash-copy-btn" data-copy="icsUrlM2">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="dash-subscribe-help">
+            <p><strong>How to subscribe:</strong></p>
+            <ol>
+              <li>Copy the URL for your class above</li>
+              <li>Open Google Calendar → <em>Other calendars (+)</em> → <em>From URL</em></li>
+              <li>Paste the URL and click <em>Add Calendar</em></li>
+            </ol>
+            <p class="dash-note">Google/Apple Calendar may take up to 24 hours to refresh. For the latest, use the <a href="calendar.html">Calendar view</a> or download the ICS directly.</p>
           </div>
         </section>
+
+        <!-- How it works -->
+        <section class="dash-section" aria-labelledby="how-title">
+          <div class="dash-section-header">
+            <div class="dash-section-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h2 id="how-title">How It Works</h2>
+              <p class="dash-section-desc">This site mirrors the official EnMed calendar and generates stable ICS feeds that external calendars can subscribe to.</p>
+            </div>
+          </div>
+
+          <div class="dash-steps">
+            <div class="dash-step">
+              <div class="dash-step-number">1</div>
+              <div>
+                <h3>Events are updated</h3>
+                <p>The PreClerkship Team updates the master calendar. A GitHub Action syncs new events every 30 minutes.</p>
+              </div>
+            </div>
+            <div class="dash-step">
+              <div class="dash-step-number">2</div>
+              <div>
+                <h3>ICS feeds are generated</h3>
+                <p>Separate .ics files are built for the full calendar and each class (M0, M1, M2) so you only see what's relevant to you.</p>
+              </div>
+            </div>
+            <div class="dash-step">
+              <div class="dash-step-number">3</div>
+              <div>
+                <h3>Your calendar refreshes</h3>
+                <p>Subscribed calendars (Google, Apple, Outlook) automatically pull the latest version — no action needed from you.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </main>
-    </div>
 
-    <template id="eventTemplate">
-      <article class="event-card">
-        <div class="event-topline">
-          <div>
-            <p class="event-date"></p>
-            <h3 class="event-title"></h3>
+      <!-- ── FOOTER ───────────────────────────────────────── -->
+      <footer class="dash-footer">
+        <p>EnMed PreClerkship Team · <a href="mailto:jvickers2025@tamu.edu">jvickers2025@tamu.edu</a></p>
+        <p class="dash-footer-note">Not available for use without permission from TAMU EnMed PCT</p>
+      </footer>
+
+      <!-- ── DOWNLOAD ICS MODAL ───────────────────────────── -->
+      <div class="dash-modal-overlay" id="downloadModal">
+        <div class="dash-modal">
+          <button class="dash-modal-close" id="closeDownloadModal" type="button" aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4L14 14M14 4L4 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+
+          <div class="dash-modal-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4v16m0 0l-6-6m6 6l6-6M6 24h20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <span class="event-badge"></span>
+
+          <h2 class="dash-modal-title">Download Calendar</h2>
+          <p class="dash-modal-desc">Choose which calendar to download as an ICS file. You can import this into any calendar app.</p>
+
+          <div class="dash-modal-options" id="downloadOptions">
+            <button type="button" class="dash-dl-option" data-calendar="full">
+              <div class="dash-dl-option-info">
+                <strong>Full Calendar</strong>
+                <span>All classes and events</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="dash-dl-option" data-calendar="M0">
+              <div class="dash-dl-option-info">
+                <strong>M0 Pre-Matriculation</strong>
+                <span>Pre-matriculation events only</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="dash-dl-option" data-calendar="M1">
+              <div class="dash-dl-option-info">
+                <strong>M1 Calendar</strong>
+                <span>First-year curriculum</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="dash-dl-option" data-calendar="M2">
+              <div class="dash-dl-option-info">
+                <strong>M2 Calendar</strong>
+                <span>Second-year curriculum</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
-        <p class="event-time"></p>
-        <p class="event-meta"></p>
-        <p class="event-desc"></p>
-        <dl class="event-fields"></dl>
-      </article>
-    </template>
+      </div>
+
+    </div>
 
     <script src="app.js"></script>
   </body>
