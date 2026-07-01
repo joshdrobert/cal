@@ -12,7 +12,22 @@ async function main() {
   const normalizedEvents = normalizeEvents(sourceEvents);
 
   await writeJsonIfChanged(path.join(ROOT, 'events.json'), sourceEvents);
-  await writeTextIfChanged(path.join(ROOT, 'calendar.ics'), buildIcs(normalizedEvents));
+  await writeTextIfChanged(path.join(ROOT, 'calendar.ics'), buildIcs(normalizedEvents, 'EnMed Calendar'));
+  await writeTextIfChanged(path.join(ROOT, 'calendar-m0.ics'), buildIcs(filterEvents(normalizedEvents, 'M0'), 'EnMed M0 Calendar'));
+  await writeTextIfChanged(path.join(ROOT, 'calendar-m1.ics'), buildIcs(filterEvents(normalizedEvents, 'M1'), 'EnMed M1 Calendar'));
+  await writeTextIfChanged(path.join(ROOT, 'calendar-m2.ics'), buildIcs(filterEvents(normalizedEvents, 'M2'), 'EnMed M2 Calendar'));
+  await writeTextIfChanged(path.join(ROOT, 'calendar-student-affairs.ics'), buildIcs(filterEvents(normalizedEvents, 'Student Affairs'), 'EnMed Student Affairs Calendar'));
+}
+
+function filterEvents(events, mCalFilter) {
+  if (!mCalFilter) return events;
+  return events.filter(e => {
+    const raw = e.raw;
+    if (raw.mCal === mCalFilter) return true;
+    if (mCalFilter === 'Student Affairs' && raw.mCal === 'SA') return true;
+    if (raw.mCal === 'Program-Wide' && ['M0', 'M1', 'M2'].includes(mCalFilter)) return true;
+    return false;
+  });
 }
 
 async function fetchSourceEvents(url) {
@@ -83,13 +98,14 @@ function normalizeEvent(event, index) {
   };
 }
 
-function buildIcs(events) {
+function buildIcs(events, calName = 'EnMed Calendar') {
   const lines = [
     'BEGIN:VCALENDAR',
     'PRODID:-//GitHub Pages Calendar Mirror//EN',
     'VERSION:2.0',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
+    `X-WR-CALNAME:${calName}`,
     ...timezoneComponent(),
   ];
 
