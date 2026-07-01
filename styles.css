@@ -1466,24 +1466,37 @@ h3 { margin-bottom: 8px; font-size: 1rem; font-weight: 700; }
     font-size: 10px;
   }
 
+  .month-day-events {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 3px;
+    padding: 2px 0;
+  }
+
   .month-event-chip {
-    padding: 1px 3px;
-    border-radius: 3px;
-    min-height: 16px;
+    width: 6px;
+    height: 6px;
+    min-height: auto;
+    padding: 0;
+    border-radius: 50%;
+    color: transparent !important;
   }
 
-  .month-event-time {
-    display: none;
-  }
+  /* Solid colors for the mobile dots */
+  .month-event-chip[data-mcal="M0"] { background: #0055b3 !important; }
+  .month-event-chip[data-mcal="M1"] { background: #1a8a3e !important; }
+  .month-event-chip[data-mcal="M2"] { background: #b37400 !important; }
+  .month-event-chip[data-mcal="M3"] { background: #7b3a9e !important; }
+  .month-event-chip[data-mcal="M4"] { background: #cc1a11 !important; }
+  .month-event-chip[data-mcal="Program-Wide"] { background: var(--accent) !important; }
+  .month-event-chip[data-mcal=""] { background: var(--text-tertiary) !important; }
 
-  .month-event-title {
-    font-size: 9px;
-    line-height: 1.15;
-  }
-
+  .month-event-time,
+  .month-event-title,
   .month-day-more {
-    font-size: 9px;
-    padding: 0 3px;
+    display: none;
   }
 
   /* Week columns stack on mobile */
