@@ -12139,5 +12139,24 @@
     "info": "",
     "presenter": "Dr. George",
     "_id": "ebf14c76-2c38-44d6-b4d2-cbcf3786d643"
+  },
+  {
+    "title": "Vimedix Ultrasound Simulation Demo",
+    "date": "07/21/2026",
+    "start": "09:00",
+    "end": "11:00",
+    "category": "Session",
+    "block": "",
+    "weekNum": 9,
+    "week": "Week 9",
+    "desc": "Vimedix Ultrasound Simulation Demo",
+    "calYear": "2029",
+    "mCal": "M1",
+    "mand": "No",
+    "group": "All Students",
+    "location": "EnMed 409",
+    "info": "",
+    "presenter": "Dr. Omole, Elevate Health Care",
+    "_id": "dbe95424-2af1-4d21-81c9-ad40c5a272c2"
   }
 ]
