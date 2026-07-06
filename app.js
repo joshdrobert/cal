@@ -30,12 +30,13 @@ async function init() {
 
 /* ── ICS URLs ─────────────────────────────────────────────────── */
 function setIcsUrls() {
-  const base = buildBaseUrl();
+  const rawBase = 'https://raw.githubusercontent.com/tamu-edu/enmed-pct-calendar/main';
   const urls = {
-    icsUrlFull: `${base}/calendar.ics`,
-    icsUrlM0: `${base}/calendar-m0.ics`,
-    icsUrlM1: `${base}/calendar-m1.ics`,
-    icsUrlM2: `${base}/calendar-m2.ics`,
+    icsUrlFull: `${rawBase}/calendar.ics`,
+    icsUrlM0: `${rawBase}/calendar-m0.ics`,
+    icsUrlM1: `${rawBase}/calendar-m1.ics`,
+    icsUrlM2: `${rawBase}/calendar-m2.ics`,
+    icsUrlSA: `${rawBase}/calendar-student-affairs.ics`,
   };
 
   for (const [id, url] of Object.entries(urls)) {
@@ -133,12 +134,20 @@ function downloadCalendar(calendarType) {
     events = state.events.filter(e => {
       const mCal = stringify(e.raw.mCal);
       if (mCal === calendarType) return true;
+      if (calendarType === 'SA' && mCal === 'SA') return true;
       // Program-Wide events go into M0/M1/M2
       if (mCal === 'Program-Wide' && ['M0', 'M1', 'M2'].includes(calendarType)) return true;
       return false;
     });
-    filename = `enmed-${calendarType.toLowerCase()}-calendar.ics`;
-    calName = `EnMed ${calendarType} Calendar`;
+
+    let displayType = calendarType;
+    if (calendarType === 'SA') {
+      displayType = 'Student Affairs';
+      filename = 'enmed-student-affairs-calendar.ics';
+    } else {
+      filename = `enmed-${calendarType.toLowerCase()}-calendar.ics`;
+    }
+    calName = `EnMed ${displayType} Calendar`;
   }
 
   const blob = new Blob([buildIcs(events, calName)], { type: 'text/calendar;charset=utf-8' });

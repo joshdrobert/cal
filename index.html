@@ -66,6 +66,28 @@
             </div>
           </div>
 
+          <!-- Disclaimer Card -->
+          <div class="dash-disclaimer-card">
+            <div class="dash-disclaimer-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <strong>*DISCLAIMER*</strong>
+            </div>
+            <div class="dash-disclaimer-body">
+              <p class="dash-disclaimer-highlight">
+                Currently, the custom live subscription links (GitHub Pages URLs) are not working. For calendar subscriptions, please use the raw GitHub calendar links below from the original EnMed repository, as instructed by the original EnMed calendar.
+              </p>
+              <p>
+                External calendars (e.g. Google Calendar, Outlook, Apple) may take up to 24–48 hours to refresh subscribed ICS calendars. Refresh intervals are controlled by the calendar and are outside of TAMU’s control.
+              </p>
+              <p>
+                Schedule updates and urgent changes may also be communicated through Teams and/or email when appropriate.
+              </p>
+              <p>
+                This calendar is considered an official scheduling resource. Students are responsible for reviewing updates regularly and remaining aware of schedule changes.
+              </p>
+            </div>
+          </div>
+
           <div class="dash-subscribe-grid">
             <div class="dash-subscribe-card">
               <span class="dash-subscribe-label">Full Calendar (All Classes)</span>
@@ -93,6 +115,13 @@
               <div class="dash-url-row">
                 <input id="icsUrlM2" type="text" readonly value="" aria-label="M2 ICS URL" />
                 <button type="button" class="dash-copy-btn" data-copy="icsUrlM2">Copy</button>
+              </div>
+            </div>
+            <div class="dash-subscribe-card">
+              <span class="dash-subscribe-label">Student Affairs Calendar</span>
+              <div class="dash-url-row">
+                <input id="icsUrlSA" type="text" readonly value="" aria-label="Student Affairs ICS URL" />
+                <button type="button" class="dash-copy-btn" data-copy="icsUrlSA">Copy</button>
               </div>
             </div>
           </div>
@@ -216,6 +245,13 @@
               <div class="dash-dl-option-info">
                 <strong>M2 Calendar</strong>
                 <span>Second-year curriculum</span>
+              </div>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="dash-dl-option" data-calendar="SA">
+              <div class="dash-dl-option-info">
+                <strong>Student Affairs Calendar</strong>
+                <span>Student affairs and support events</span>
               </div>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>

@@ -4,7 +4,7 @@
 
 const TIMEZONE = 'America/Chicago';
 const EVENTS_PATH = 'events.json';
-const MCAL_OPTIONS = ['All', 'M0', 'M1', 'M2', 'M3', 'M4'];
+const MCAL_OPTIONS = ['All', 'M0', 'M1', 'M2', 'M3', 'M4', 'SA'];
 
 const state = {
   events: [],
@@ -192,18 +192,17 @@ function setIcsUrl() {
 }
 
 function buildPublishedIcsUrl() {
-  const hostname = window.location.hostname || '';
-  const isGithubPages = hostname.endsWith('.github.io');
-  const owner = isGithubPages ? hostname.replace(/\.github\.io$/, '') : 'OWNER';
-  const segments = window.location.pathname.split('/').filter(Boolean);
-  const repo = segments[0] || 'REPO';
-  
+  const rawBase = 'https://raw.githubusercontent.com/tamu-edu/enmed-pct-calendar/main';
   let filename = 'calendar.ics';
   if (state.activeMCal && state.activeMCal !== 'All') {
-    filename = `calendar-${state.activeMCal.toLowerCase()}.ics`;
+    if (state.activeMCal === 'Student Affairs' || state.activeMCal === 'SA') {
+      filename = 'calendar-student-affairs.ics';
+    } else {
+      filename = `calendar-${state.activeMCal.toLowerCase()}.ics`;
+    }
   }
   
-  return `https://${owner}.github.io/${repo}/${filename}`;
+  return `${rawBase}/${filename}`;
 }
 
 /* ── VIEW CONTROLS ────────────────────────────────────────────── */
@@ -356,8 +355,15 @@ function applyFilters() {
 
 function matchesFilters(event) {
   const filters = state.filters;
-  if (state.activeMCal !== 'All' && getFieldValue(event.raw.mCal) !== state.activeMCal) {
-    return false;
+  if (state.activeMCal !== 'All') {
+    const mCal = getFieldValue(event.raw.mCal);
+    if (mCal !== state.activeMCal) {
+      // Program-Wide events go into M0/M1/M2
+      const isProgramWideForClass = mCal === 'Program-Wide' && ['M0', 'M1', 'M2'].includes(state.activeMCal);
+      if (!isProgramWideForClass) {
+        return false;
+      }
+    }
   }
   if (filters.query && !event.searchText.includes(filters.query.toLowerCase())) {
     return false;
@@ -662,6 +668,7 @@ function openEventModal(event) {
     'M2': { bg: 'rgba(255,149,0,0.1)', color: '#b37400' },
     'M3': { bg: 'rgba(175,82,222,0.1)', color: '#7b3a9e' },
     'M4': { bg: 'rgba(255,59,48,0.1)', color: '#cc1a11' },
+    'SA': { bg: 'rgba(0,113,164,0.1)', color: '#0071a4' },
     'Program-Wide': { bg: 'rgba(80,0,0,0.06)', color: '#500000' },
   };
   const bc = badgeColors[mCalValue] || { bg: 'rgba(0,0,0,0.05)', color: '#86868b' };
@@ -728,7 +735,10 @@ function renderStats(nowKey) {
 function renderMCalChips() {
   els.mCalChips.innerHTML = MCAL_OPTIONS.map((value) => {
     const active = value === state.activeMCal ? ' is-active' : '';
-    return `<button type="button" class="mcal-chip${active}" data-mcal="${escapeHtml(value)}" aria-pressed="${value === state.activeMCal}">${escapeHtml(value === 'All' ? 'All Calendars' : value)}</button>`;
+    let displayVal = value;
+    if (value === 'All') displayVal = 'All Calendars';
+    else if (value === 'SA') displayVal = 'Student Affairs';
+    return `<button type="button" class="mcal-chip${active}" data-mcal="${escapeHtml(value)}" aria-pressed="${value === state.activeMCal}">${escapeHtml(displayVal)}</button>`;
   }).join('');
 
   els.mCalChips.querySelectorAll('button[data-mcal]').forEach((button) => {
@@ -797,7 +807,9 @@ function downloadFilteredIcs() {
   let filename = 'calendar.ics';
 
   if (state.activeMCal && state.activeMCal !== 'All') {
-    calName = `EnMed ${state.activeMCal} Calendar`;
+    let displayType = state.activeMCal;
+    if (state.activeMCal === 'SA') displayType = 'Student Affairs';
+    calName = `EnMed ${displayType} Calendar`;
     filename = `enmed-${state.activeMCal.toLowerCase()}-calendar.ics`;
   }
 
