@@ -12158,5 +12158,24 @@
     "info": "",
     "presenter": "Dr. Omole, Elevate Health Care",
     "_id": "dbe95424-2af1-4d21-81c9-ad40c5a272c2"
+  },
+  {
+    "title": "SDLs",
+    "date": "08/10/2026",
+    "start": "16:00",
+    "end": "017:00",
+    "category": "Session",
+    "block": "",
+    "weekNum": 12,
+    "week": "Week 12",
+    "desc": "SDLs",
+    "calYear": "2029",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "Assigned Students Only",
+    "location": "",
+    "info": "Self-Directed Learning Presentations\nZoom link:\nhttps://tamu.zoom.us/j/99243575357?pwd=KUrSRI7m4w2L2xUQ3OxHF9MsO41a4f.1",
+    "presenter": "",
+    "_id": "b7f265ad-f2ab-4ca1-9343-de41790624e0"
   }
 ]
