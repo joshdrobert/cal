@@ -12498,5 +12498,25 @@
     "info": "",
     "presenter": "",
     "_id": "53e839e7-bdc9-4d94-9c0b-77b141f2ce09"
+  },
+  {
+    "title": "Semester Kickoff",
+    "date": "08/31/2026",
+    "start": "12:00",
+    "end": "1:30pm",
+    "allDay": false,
+    "category": "Events",
+    "block": "",
+    "weekNum": 19,
+    "week": "Week 19",
+    "desc": "Semester Kickoff",
+    "calYear": "2029",
+    "mCal": "Program-Wide",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "79bca1f5-88bc-44c8-accc-06cf2e8b64dd"
   }
 ]
