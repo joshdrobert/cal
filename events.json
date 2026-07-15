@@ -5626,11 +5626,12 @@
     "end": "17:00",
     "category": "exam",
     "block": "POM 3",
-    "weekNum": 27,
-    "presenter": "Dr. Caplan",
+    "weekNum": 31,
+    "presenter": "Dr. Caplan, Dr. George",
     "info": "Please see Canvas for student group assignments and additional information.",
-    "week": "Week 27",
-    "desc": "PoM 3 Final OSCE"
+    "week": "Week 31",
+    "desc": "PoM 3 Final OSCE",
+    "allDay": false
   },
   {
     "_id": "11051226_91",
@@ -5644,10 +5645,13 @@
     "start": "11:00",
     "end": "12:00",
     "category": "Session",
-    "block": "PoM 3",
-    "weekNum": 19,
-    "presenter": "Dr. Caplan",
-    "info": "Additional info, please see Canvas"
+    "block": "POM 3",
+    "weekNum": 32,
+    "presenter": "Dr. Caplan, Dr. George",
+    "info": "Additional info, please see Canvas",
+    "allDay": false,
+    "week": "Week 32",
+    "desc": "Course Debrief"
   },
   {
     "_id": "11051226_92",
@@ -5662,11 +5666,12 @@
     "end": "17:00",
     "category": "exam",
     "block": "POM 3",
-    "weekNum": 29,
-    "presenter": "Dr. Caplan",
+    "weekNum": 33,
+    "presenter": "Dr. Caplan, Dr. George",
     "info": "Additional info, please see Canvas",
-    "week": "Week 29",
-    "desc": "PoM 3 Final OSCE Retake and/or Makeup (Projected)"
+    "week": "Week 33",
+    "desc": "PoM 3 Final OSCE Retake and/or Makeup (Projected)",
+    "allDay": false
   },
   {
     "_id": "11051226_93",
@@ -5681,11 +5686,12 @@
     "end": "17:00",
     "category": "exam",
     "block": "POM 3",
-    "weekNum": 29,
-    "presenter": "Dr. Caplan",
+    "weekNum": 33,
+    "presenter": "Dr. Caplan, Dr. George",
     "info": "Additional info, please see Canvas",
-    "week": "Week 29",
-    "desc": "FHP OSCE Retake Tentative**"
+    "week": "Week 33",
+    "desc": "FHP OSCE Retake Tentative**",
+    "allDay": false
   },
   {
     "title": "Asynchronous Modules 1-12 Open",
