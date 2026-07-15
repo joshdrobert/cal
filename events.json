@@ -5656,7 +5656,7 @@
   {
     "_id": "11051226_92",
     "mand": "Yes",
-    "title": "PoM 3 Final OSCE Retake and/or Makeup (Projected)",
+    "title": "PoM 3 Final OSCE Retake and/or Makeup",
     "group": "Assigned Students Only",
     "location": "4th Flr SIM Ctr Rm 404, Discovery Tower",
     "calYear": "2029",
@@ -5670,13 +5670,13 @@
     "presenter": "Dr. Caplan, Dr. George",
     "info": "Additional info, please see Canvas",
     "week": "Week 33",
-    "desc": "PoM 3 Final OSCE Retake and/or Makeup (Projected)",
+    "desc": "PoM 3 Final OSCE Retake and/or Makeup",
     "allDay": false
   },
   {
     "_id": "11051226_93",
     "mand": "Yes",
-    "title": "FHP OSCE Retake Tentative**",
+    "title": "FHP OSCE Retake",
     "group": "Assigned Students Only",
     "location": "3rd Flr SIM Ctr Rm 305, Discovery Tower",
     "calYear": "2029",
@@ -5690,7 +5690,7 @@
     "presenter": "Dr. Caplan, Dr. George",
     "info": "Additional info, please see Canvas",
     "week": "Week 33",
-    "desc": "FHP OSCE Retake Tentative**",
+    "desc": "FHP OSCE Retake",
     "allDay": false
   },
   {
@@ -6024,7 +6024,7 @@
     "group": "All Students",
     "location": "",
     "calYear": "2030",
-    "mCal": "M0",
+    "mCal": "M1",
     "date": "07/30/2026",
     "start": "",
     "end": "",
@@ -9529,9 +9529,9 @@
     "start": "08:00:00",
     "end": "10:00:00",
     "category": "Lab",
-    "block": "FoM I",
-    "weekNum": 1,
-    "week": "7",
+    "block": "FOM I",
+    "weekNum": 21,
+    "week": "Week 21",
     "desc": "Histology Lab",
     "calYear": "2030",
     "mCal": "M1",
@@ -9540,7 +9540,8 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_26",
     "info": "Histology: Female Reproductive and Urinary System",
-    "presenter": "Dr. Meyer"
+    "presenter": "Dr. Paolini",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -9605,9 +9606,9 @@
     "start": "10:00:00",
     "end": "12:00:00",
     "category": "Lab",
-    "block": "FoM I",
-    "weekNum": 1,
-    "week": "8",
+    "block": "FOM I",
+    "weekNum": 22,
+    "week": "Week 22",
     "desc": "Histology Lab",
     "calYear": "2030",
     "mCal": "M1",
@@ -9616,7 +9617,8 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_30",
     "info": "Histology: Male Reproductive System",
-    "presenter": "Dr. Meyer"
+    "presenter": "Dr. Paolini",
+    "allDay": false
   },
   {
     "title": "TBL",
@@ -9719,9 +9721,9 @@
     "start": "08:00:00",
     "end": "10:00:00",
     "category": "Lab",
-    "block": "FoM I",
-    "weekNum": 1,
-    "week": "13",
+    "block": "FOM I",
+    "weekNum": 27,
+    "week": "Week 27",
     "desc": "Histology Lab",
     "calYear": "2030",
     "mCal": "M1",
@@ -9730,7 +9732,8 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_38",
     "info": "Histology: Special Senses - Eye and Ear (Histology and Physiology)",
-    "presenter": "Dr. Meyer and Dr. Slivkoff"
+    "presenter": "Dr. Paolini and Dr. Slivkoff",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -9738,9 +9741,9 @@
     "start": "08:00:00",
     "end": "10:00:00",
     "category": "Session",
-    "block": "FoM I",
-    "weekNum": 1,
-    "week": "14",
+    "block": "FOM I",
+    "weekNum": 28,
+    "week": "Week 28",
     "desc": "Active Learning",
     "calYear": "2030",
     "mCal": "M1",
@@ -9749,7 +9752,8 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_39",
     "info": "Histology and Physiology: Special Senses Physiology (Vision, Hearing)",
-    "presenter": "Dr. Meyer and Dr. Slivkoff"
+    "presenter": "Dr. Paolini and Dr. Slivkoff",
+    "allDay": false
   },
   {
     "title": "TBL",
@@ -10254,7 +10258,7 @@
     "start": "",
     "end": "",
     "category": "Events",
-    "block": "Thanksgiving - No Classes",
+    "block": "Holiday - No Classes",
     "weekNum": 31,
     "week": "Week 31",
     "desc": "Thanksgiving Holiday",
@@ -10274,7 +10278,7 @@
     "start": "",
     "end": "",
     "category": "Events",
-    "block": "Thanksgiving - No Classes",
+    "block": "Holiday - No Classes",
     "weekNum": 31,
     "week": "Week 31",
     "desc": "Thanksgiving Holiday",
