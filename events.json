@@ -12518,5 +12518,25 @@
     "info": "",
     "presenter": "",
     "_id": "79bca1f5-88bc-44c8-accc-06cf2e8b64dd"
+  },
+  {
+    "title": "Bootcamp OSCE Optional Open Lab",
+    "date": "07/29/2026",
+    "start": "15:00",
+    "end": "17:00",
+    "allDay": false,
+    "category": "Session",
+    "block": "POM I",
+    "weekNum": 14,
+    "week": "Week 14",
+    "desc": "Bootcamp OSCE Optional Open Lab",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "No",
+    "group": "All Students",
+    "location": "4th Floor SIM Center 404 EnMed Tower",
+    "info": "",
+    "presenter": "",
+    "_id": "640c35f3-0bf6-4ab0-bbaf-c0a2bfbe3f68"
   }
 ]
