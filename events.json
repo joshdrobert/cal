@@ -1948,8 +1948,8 @@
     "end": "11:00",
     "category": "Session",
     "block": "MGA",
-    "weekNum": 11,
-    "week": "Week 11",
+    "weekNum": 15,
+    "week": "Week 15",
     "desc": "Active Learning",
     "calYear": "2030",
     "mCal": "M1",
@@ -1957,8 +1957,9 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_4",
-    "info": "Thoracic wall; Deep back; Basic concepts of embryology",
-    "presenter": "Dr. Omole"
+    "info": "Thoracic wall and Deep back",
+    "presenter": "Dr. Meyer",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -1967,8 +1968,8 @@
     "end": "12:00",
     "category": "Session",
     "block": "MGA",
-    "weekNum": 11,
-    "week": "Week 11",
+    "weekNum": 15,
+    "week": "Week 15",
     "desc": "Active Learning",
     "calYear": "2030",
     "mCal": "M1",
@@ -1976,8 +1977,9 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_5",
-    "info": "Introduction to radiology",
-    "presenter": "Dr. Omole, Dr. Wilson"
+    "info": "Basic concepts of embryology and Development of the MSK system",
+    "presenter": "Dr. Omole",
+    "allDay": false
   },
   {
     "title": "Active Learning",
