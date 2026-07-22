@@ -6635,7 +6635,7 @@
     "group": "All Students",
     "location": "",
     "calYear": "2030",
-    "mCal": "M0",
+    "mCal": "M1",
     "date": "09/28/2026",
     "start": "",
     "end": "",
@@ -11987,15 +11987,15 @@
     "_id": "2ed25fbc-e8d1-4559-9227-ebc04ef21dd0"
   },
   {
-    "title": "PoM 3 Final OSCE (CHECK-IN 7:50AM)",
+    "title": "PoM 3 Final OSCE Check-In",
     "date": "11/23/2026",
     "start": "07:50",
     "end": "08:00",
     "category": "exam check-in",
     "block": "POM 3",
-    "weekNum": 27,
-    "week": "Week 27",
-    "desc": "PoM 3 Final OSCE (CHECK-IN 7:50AM)",
+    "weekNum": 31,
+    "week": "Week 31",
+    "desc": "PoM 3 Final OSCE Check-In",
     "calYear": "2029",
     "mCal": "M2",
     "mand": "Yes",
@@ -12003,7 +12003,8 @@
     "location": "4th Flr SIM Ctr Rm 404, Discovery Tower",
     "info": "Please see Canvas for student group assignments and additional information.",
     "presenter": "",
-    "_id": "229b1d9d-6e13-404c-ac64-600015324907"
+    "_id": "229b1d9d-6e13-404c-ac64-600015324907",
+    "allDay": false
   },
   {
     "title": "NBME Exam Check-In",
