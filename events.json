@@ -7407,8 +7407,8 @@
     "end": "11:00:00",
     "category": "Session",
     "block": "Respiratory",
-    "weekNum": 1,
-    "week": "2",
+    "weekNum": 15,
+    "week": "Week 15",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -7416,8 +7416,9 @@
     "group": "All Students",
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "4051226_7",
-    "info": "Disorders of the Pleura and Mediastinum;  Tumors of the Respiratory Tract",
-    "presenter": "Dr. Paolini"
+    "info": "Disorders of the Pleura and Mediastinum;  Tumors of the Respiratory Tract; Congenital Lung Disorders",
+    "presenter": "Dr. Paolini",
+    "allDay": false
   },
   {
     "title": "Active Learning",
