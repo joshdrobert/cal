@@ -2032,8 +2032,8 @@
     "end": "10:00",
     "category": "Session",
     "block": "MGA",
-    "weekNum": 12,
-    "week": "Week 12",
+    "weekNum": 16,
+    "week": "Week 16",
     "desc": "Active Learning",
     "calYear": "2030",
     "mCal": "M1",
@@ -2041,8 +2041,9 @@
     "group": "All Students",
     "location": "2nd Flr Room 212 A/B, EnMed Twr",
     "_id": "10051226_6",
-    "info": "Development of the MSK system; Autonomic nervous system; Overview of lymphatics",
-    "presenter": "Dr. Omole, Dr. Meyer"
+    "info": "Autonomic nervous system, Overview of lymphatics and Introduction to Radiology",
+    "presenter": "Dr. Meyer and Dr. Wilson",
+    "allDay": false
   },
   {
     "title": "MITIE Lab Dissection",
