@@ -7922,8 +7922,8 @@
     "end": "12:00:00",
     "category": "TBL",
     "block": "GI",
-    "weekNum": 1,
-    "week": "2",
+    "weekNum": 23,
+    "week": "Week 23",
     "desc": "TBL",
     "calYear": "2029",
     "mCal": "M2",
@@ -7932,7 +7932,8 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_3",
     "info": "Clinical Case Discussion",
-    "presenter": ""
+    "presenter": "Dr. Parikh, Dr. Slivkoff, Dr. Mobaraki, Dr. Paolini, and Dr. Rogers",
+    "allDay": false
   },
   {
     "title": "Exam #1 Check-In",
@@ -8055,8 +8056,8 @@
     "end": "12:00:00",
     "category": "CBL",
     "block": "GI",
-    "weekNum": 1,
-    "week": "4",
+    "weekNum": 25,
+    "week": "Week 25",
     "desc": "CBL",
     "calYear": "2029",
     "mCal": "M2",
@@ -8065,7 +8066,8 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_10",
     "info": "Upper/Lower/Hepatobiliary/Pancreas",
-    "presenter": ""
+    "presenter": "Dr. Mobaraki, Dr. Kodali, Dr. Caplan, Dr. Parikh",
+    "allDay": false
   },
   {
     "title": "Exam Review",
@@ -8074,8 +8076,8 @@
     "end": "12:00:00",
     "category": "Review Session",
     "block": "GI",
-    "weekNum": 21,
-    "week": "Week 21",
+    "weekNum": 25,
+    "week": "Week 25",
     "desc": "Exam Review",
     "calYear": "2029",
     "mCal": "M2",
@@ -8084,7 +8086,8 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_12",
     "info": "Liver/Gall bladder/ Pancreas/Nutrition",
-    "presenter": ""
+    "presenter": "Dr. Paolini, Dr. Rogers, Dr. Hughes, Dr. Derry, Dr. Slivkoff, Dr. Mobaraki",
+    "allDay": false
   },
   {
     "title": "Exam #2 & NBME Check-In",
