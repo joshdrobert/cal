@@ -10882,27 +10882,6 @@
     "endDate": "11/27/2026"
   },
   {
-    "title": "Winter Break",
-    "date": "12/24/2026",
-    "start": "",
-    "end": "",
-    "category": "Events",
-    "block": "Holiday - No Classes",
-    "weekNum": 35,
-    "week": "Week 35",
-    "desc": "Winter Break",
-    "calYear": "2029",
-    "mCal": "Program-Wide",
-    "mand": "No",
-    "group": "All Students",
-    "location": "",
-    "info": "",
-    "presenter": "",
-    "_id": "1779298481496",
-    "allDay": true,
-    "endDate": "12/31/2026"
-  },
-  {
     "title": "New Year's Holiday",
     "date": "01/01/2027",
     "start": "",
@@ -13471,5 +13450,26 @@
     "presenter": "Various Leadership",
     "_id": "e89a02cb-edb1-4b54-a563-f39e3805d90f",
     "endDate": ""
+  },
+  {
+    "title": "Winter Break",
+    "date": "12/24/2026",
+    "endDate": "12/31/2026",
+    "start": "",
+    "end": "",
+    "allDay": true,
+    "category": "Events",
+    "block": "Holiday - No Classes",
+    "weekNum": 35,
+    "week": "Week 35",
+    "desc": "Winter Break",
+    "calYear": "2029",
+    "mCal": "Program-Wide",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "4a678dd6-ccc9-49a2-98b3-7cbe1daf926e"
   }
 ]
