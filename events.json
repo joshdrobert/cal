@@ -8376,8 +8376,8 @@
     "end": "12:00",
     "category": "Session",
     "block": "GI",
-    "weekNum": 20,
-    "week": "Week 20",
+    "weekNum": 24,
+    "week": "Week 24",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -8386,8 +8386,9 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_6",
     "info": "Pathology of the Liver I, Pathology of the Liver II, Pathology of the Gall Bladder and Biliary Tract",
-    "presenter": "Dr. Hughes",
-    "endDate": ""
+    "presenter": "Dr. Hughes and Dr. Parikh",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -8436,8 +8437,8 @@
     "end": "12:00",
     "category": "Session",
     "block": "GI",
-    "weekNum": 1,
-    "week": "3",
+    "weekNum": 24,
+    "week": "Week 24",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -8446,8 +8447,9 @@
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "6051226_9",
     "info": "Nutrition/Malnutrition, Vitamins and Minerals",
-    "presenter": "",
-    "endDate": ""
+    "presenter": "Dr. Derry and Dr. Gibson",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "CBL",
