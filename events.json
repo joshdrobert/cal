@@ -11465,24 +11465,25 @@
     "endDate": ""
   },
   {
-    "title": "Engineering Innovation Session: HEENT",
+    "title": "[RESCHEDULED] HEENT Clinical Application Session",
     "date": "08/10/2026",
     "start": "15:30",
     "end": "17:00",
-    "category": "ITDE",
-    "block": "ITDE 611",
-    "weekNum": 12,
-    "week": "Week 12",
-    "desc": "",
+    "category": "Session",
+    "block": "ITDE 611, POM I",
+    "weekNum": 16,
+    "week": "Week 16",
+    "desc": "[RESCHEDULED] HEENT Clinical Application Session",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
     "group": "Group A",
     "location": "2nd Flr Rm 216 EnMed Twr",
     "_id": "ad29c214-893c-4e57-ab0c-37c61c6ebe31",
-    "info": "",
+    "info": "Formerly the Group A ITDE 611 Innovation Session, Groups A and B will now attend a combined HEENT Clinical Application Session on 08/10. The ITDE 611 Innovation Session will be rescheduled to a later date. Details forthcoming.",
     "presenter": "",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Engineering Innovation Session: HEENT",
