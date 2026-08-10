@@ -6451,17 +6451,18 @@
     "location": "2nd Floor Room 212 A/B EnMed Tower",
     "calYear": "2030",
     "mCal": "M1",
-    "date": "08/03/2026",
-    "start": "16:30",
-    "end": "18:00",
+    "date": "08/19/2026",
+    "start": "13:00",
+    "end": "14:30",
     "category": "Workshop",
     "block": "POM I",
-    "weekNum": 11,
-    "week": "Week 11",
+    "weekNum": 17,
+    "week": "Week 17",
     "desc": "HEENT Clinical Application Session",
     "presenter": "Dr. Yeh, Dr. Monga",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_15",
@@ -6527,7 +6528,7 @@
     "_id": "1051226_18",
     "mand": "Yes",
     "title": "HEENT Clinical Application Session",
-    "group": "Group B",
+    "group": "All Students",
     "location": "2nd Floor Room 212 A/B EnMed Tower",
     "calYear": "2030",
     "mCal": "M1",
@@ -6536,12 +6537,13 @@
     "end": "17:00",
     "category": "Workshop",
     "block": "POM I",
-    "weekNum": 12,
-    "week": "Week 12",
+    "weekNum": 16,
+    "week": "Week 16",
     "desc": "HEENT Clinical Application Session",
     "presenter": "Dr. Yeh, Dr. Monga",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_19",
@@ -13462,5 +13464,26 @@
     "info": "",
     "presenter": "",
     "_id": "4a678dd6-ccc9-49a2-98b3-7cbe1daf926e"
+  },
+  {
+    "title": "Optional Session HEENT Scope Demonstration Session",
+    "date": "08/21/2026",
+    "endDate": "",
+    "start": "13:00",
+    "end": "14:00",
+    "allDay": false,
+    "category": "Session",
+    "block": "POM I",
+    "weekNum": 17,
+    "week": "Week 17",
+    "desc": "Optional Session HEENT Scope Demonstration Session",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "No",
+    "group": "All Students",
+    "location": "2nd Floor Room 212 A/B EnMed Tower",
+    "info": "",
+    "presenter": "Dr. Yeh, Dr. Monga",
+    "_id": "16eae29e-4e72-4097-8c58-a7cb1fd78480"
   }
 ]
