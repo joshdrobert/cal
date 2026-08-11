@@ -3200,15 +3200,15 @@
     "endDate": ""
   },
   {
-    "title": "NBME Exam",
+    "title": "Practical Exam",
     "date": "10/16/2026",
     "start": "13:00",
     "end": "17:00",
     "category": "Exam",
     "block": "MGA",
-    "weekNum": 21,
-    "week": "Week 21",
-    "desc": "NBME Exam",
+    "weekNum": 25,
+    "week": "Week 25",
+    "desc": "Practical Exam",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -3217,7 +3217,9 @@
     "_id": "10051226_64",
     "info": "",
     "presenter": "",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false,
+    "examPairId": "d3326fff-9546-4ef9-9ece-df3c2f3a7578"
   },
   {
     "title": "Active Learning",
@@ -6772,7 +6774,7 @@
     "mand": "Yes",
     "title": "Cardiovascular Clinical Application Session",
     "group": "Group A",
-    "location": "2n",
+    "location": "2nd Floor Room 212 A/B EnMed Tower",
     "calYear": "2030",
     "mCal": "M1",
     "date": "08/31/2026",
@@ -6780,12 +6782,13 @@
     "end": "17:00",
     "category": "Workshop",
     "block": "POM I",
-    "weekNum": 15,
-    "week": "Week 15",
+    "weekNum": 19,
+    "week": "Week 19",
     "desc": "Cardiovascular Clinical Application Session",
     "presenter": "Dr. Yeh, Dr. Monga",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_31",
@@ -11447,24 +11450,27 @@
     "endDate": "12/15/2026"
   },
   {
-    "title": "NBME Exam Check-In",
+    "title": "Practical Exam Check-In",
     "date": "10/16/2026",
     "start": "12:45",
     "end": "12:55",
     "category": "Exam Check-In",
-    "block": "",
-    "weekNum": 21,
-    "week": "Week 21",
-    "desc": "NBME Exam Check-In",
+    "block": "MGA",
+    "weekNum": 25,
+    "week": "Week 25",
+    "desc": "Practical Exam Check-In",
     "calYear": "2030",
     "mCal": "M1",
-    "mand": "Yes",
+    "mand": "No",
     "group": "All Students",
-    "location": "4th Fl Room 409",
+    "location": "MITIE",
     "info": "",
     "presenter": "",
     "_id": "70fe4713-23b5-41d5-b4ab-6166df4ab281",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false,
+    "examPairId": "d3326fff-9546-4ef9-9ece-df3c2f3a7578",
+    "parentExamId": "10051226_64"
   },
   {
     "title": "[RESCHEDULED] HEENT Clinical Application Session",
