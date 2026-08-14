@@ -13113,5 +13113,26 @@
     "info": "",
     "presenter": "Dr. Eugene Alford",
     "_id": "16eae29e-4e72-4097-8c58-a7cb1fd78480"
+  },
+  {
+    "title": "UWorld Quiz Due @ 11:55 PM",
+    "date": "08/16/2026",
+    "endDate": "08/16/2026",
+    "start": "",
+    "end": "",
+    "allDay": true,
+    "category": "Announcement",
+    "block": "Respiratory",
+    "weekNum": 16,
+    "week": "Week 16",
+    "desc": "UWorld Quiz Due @ 11:55 PM",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "8f82b29a-73a4-494d-bfdf-d0e231d4f09d"
   }
 ]
