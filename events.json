@@ -7627,12 +7627,13 @@
     "end": "15:00",
     "category": "LC Small Groups",
     "block": "POM I",
-    "weekNum": 29,
-    "week": "Week 29",
+    "weekNum": 33,
+    "week": "Week 33",
     "desc": "LC Groups: White Coat Experience Presentation",
     "presenter": "LC Leaders",
-    "info": "Additional info, please see Canvas (LC Leaders Dunbar,Fattakov,Iyer)",
-    "endDate": ""
+    "info": "Additional info, please see Canvas ALL LC Leaders",
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_75",
@@ -7647,12 +7648,13 @@
     "end": "17:00",
     "category": "LC Small Groups",
     "block": "POM I",
-    "weekNum": 29,
-    "week": "Week 29",
+    "weekNum": 33,
+    "week": "Week 33",
     "desc": "LC Groups: Professionalism & Well-Being",
     "presenter": "LC Leaders",
-    "info": "Additional info, please see Canvas (LC Leaders Dunbar,Fattakov,Iyer)",
-    "endDate": ""
+    "info": "Additional info, please see Canvas ALL LC leaders",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Course Intro + Active Learning",
