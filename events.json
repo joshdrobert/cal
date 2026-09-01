@@ -10187,9 +10187,9 @@
     "start": "10:00",
     "end": "11:30",
     "category": "TBL",
-    "block": "FoM I",
-    "weekNum": 18,
-    "week": "Week 18",
+    "block": "FOM I",
+    "weekNum": 22,
+    "week": "Week 22",
     "desc": "TBL",
     "calYear": "2030",
     "mCal": "M1",
@@ -10198,8 +10198,9 @@
     "location": "2nd Flr Rm 212 A/B EnMed Twr",
     "_id": "2051226_31",
     "info": "All Handouts",
-    "presenter": "Dr. Priya, Dr. Meyer, Dr. Peterson, Dr. Slivkoff",
-    "endDate": ""
+    "presenter": "Dr. Priya, Dr. Meyer, Dr. Peterson",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
