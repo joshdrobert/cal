@@ -1292,15 +1292,15 @@
     "endDate": ""
   },
   {
-    "title": "EnMed Impact Launch",
+    "title": "Tissue Graft; Tissue Engineering",
     "date": "09/15/2026",
     "start": "10:00",
     "end": "12:00",
     "category": "ITDE",
     "block": "ITDE 611",
-    "weekNum": "",
-    "week": "",
-    "desc": "ITDE 611",
+    "weekNum": 21,
+    "week": "Week 21",
+    "desc": "Tissue Graft; Tissue Engineering",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1309,7 +1309,8 @@
     "_id": "13_05142026_9",
     "info": "",
     "presenter": "",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "EMERGE Seminar 2",
@@ -1352,15 +1353,15 @@
     "endDate": ""
   },
   {
-    "title": "Tissue Graft; Tissue Engineering",
+    "title": "EnMed Impact Launch",
     "date": "10/06/2026",
     "start": "10:00",
     "end": "12:00",
     "category": "ITDE",
     "block": "ITDE 611",
-    "weekNum": "",
-    "week": "",
-    "desc": "ITDE 611",
+    "weekNum": 24,
+    "week": "Week 24",
+    "desc": "EnMed Impact Launch",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
@@ -1369,7 +1370,8 @@
     "_id": "13_05142026_12",
     "info": "",
     "presenter": "",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Introduction to Medical Imaging 2",
