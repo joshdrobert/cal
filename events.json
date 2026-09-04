@@ -13633,5 +13633,26 @@
     "_id": "d21469ce-3c38-4564-a09d-5448812e859b",
     "info": "",
     "presenter": ""
+  },
+  {
+    "title": "Halloween Party",
+    "date": "10/26/2026",
+    "endDate": "",
+    "start": "12:00",
+    "end": "13:30",
+    "allDay": false,
+    "category": "Events",
+    "block": "",
+    "weekNum": 27,
+    "week": "Week 27",
+    "desc": "Halloween Party",
+    "calYear": "2029",
+    "mCal": "Program-Wide",
+    "mand": "No",
+    "group": "All Students",
+    "location": "",
+    "info": "Students, staff, and faculty welcome.",
+    "presenter": "",
+    "_id": "47685903-5222-47f4-8751-692653d9f9b6"
   }
 ]
