@@ -7221,7 +7221,7 @@
   {
     "_id": "1051226_52",
     "mand": "Yes",
-    "title": "HEAL Structural Competency Foundations 3",
+    "title": "HEAL Overview of QI/Patient Safety",
     "group": "All Students",
     "location": "2nd Floor Room 212 A/B EnMed Tower",
     "calYear": "2030",
@@ -7230,13 +7230,14 @@
     "start": "10:00",
     "end": "12:00",
     "category": "Session",
-    "block": "PoM 1",
-    "weekNum": 13,
-    "week": "Week 13",
-    "desc": "HEAL Structural Competency Foundations 3",
+    "block": "POM I",
+    "weekNum": 26,
+    "week": "Week 26",
+    "desc": "HEAL Overview of QI/Patient Safety",
     "presenter": "TBD",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_53",
@@ -7401,7 +7402,7 @@
   {
     "_id": "1051226_61",
     "mand": "Yes",
-    "title": "HEAL System Based Practice 3: Patient Safety",
+    "title": "HEAL Cultural Humility/Implicit Bias",
     "group": "All Students",
     "location": "2nd Floor Room 212 A/B EnMed Tower",
     "calYear": "2030",
@@ -7410,13 +7411,14 @@
     "start": "13:00",
     "end": "16:00",
     "category": "Session",
-    "block": "PoM 1",
-    "weekNum": 15,
-    "week": "Week 15",
-    "desc": "HEAL System Based Practice 3: Patient Safety",
+    "block": "POM I",
+    "weekNum": 28,
+    "week": "Week 28",
+    "desc": "HEAL Cultural Humility/Implicit Bias",
     "presenter": "TBD",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_62",
@@ -13879,5 +13881,26 @@
     "presenter": "",
     "_id": "46f8197b-ac6b-4129-82ac-c965c5ce3d0a",
     "examPairId": "8a1b54c2-413b-4a24-bba3-b8b4ec27a253"
+  },
+  {
+    "title": "Head-to-toe Open Lab - If Needed",
+    "date": "09/17/2026",
+    "endDate": "",
+    "start": "13:30",
+    "end": "15:30",
+    "allDay": false,
+    "category": "Session",
+    "block": "POM I",
+    "weekNum": 21,
+    "week": "Week 21",
+    "desc": "Head-to-toe Open Lab - If Needed",
+    "calYear": "2030",
+    "mCal": "M1",
+    "mand": "No",
+    "group": "All Students",
+    "location": "4th Floor SIM Center 404 EnMed Tower",
+    "info": "Please see Canvas for student group assignments and additional information.",
+    "presenter": "Dr. Yeh, Dr. Monga",
+    "_id": "f39c358d-39ab-4e2c-a12e-8224b10af7b0"
   }
 ]
