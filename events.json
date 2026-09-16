@@ -2698,24 +2698,25 @@
     "endDate": ""
   },
   {
-    "title": "MITIE Lab Dissection",
+    "title": "[CANCELLED] MITIE Lab Dissection",
     "date": "09/17/2026",
     "start": "09:00",
     "end": "12:00",
     "category": "Lab",
     "block": "MGA",
-    "weekNum": 17,
-    "week": "Week 17",
-    "desc": "MITIE Lab Dissection",
+    "weekNum": 21,
+    "week": "Week 21",
+    "desc": "[CANCELLED] MITIE Lab Dissection",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "Yes",
     "group": "Group A",
     "location": "MITIE",
     "_id": "10051226_39",
-    "info": "Pelvis I and female reproductive organs",
+    "info": "[Due to temporary closure of the Anatomy Lab, this session has been cancelled. As of 09/16, no other MITIE lab sessions have been cancelled.] Pelvis I and female reproductive organs",
     "presenter": "Dr. Meyer, Dr. Omole",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
