@@ -6947,16 +6947,17 @@
     "calYear": "2030",
     "mCal": "M1",
     "date": "09/21/2026",
-    "start": "10:00",
+    "start": "11:00",
     "end": "12:00",
     "category": "Session",
-    "block": "PoM 1",
-    "weekNum": 9,
-    "week": "Week 9",
+    "block": "POM I",
+    "weekNum": 22,
+    "week": "Week 22",
     "desc": "Integrated Medicine: Intro to EMR/Epic Lifestyle Medicine",
     "presenter": "Dr. Yeh, Dr. Monga",
     "info": "Additional info, please see Canvas",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "_id": "1051226_39",
