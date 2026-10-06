@@ -2979,7 +2979,7 @@
     "endDate": ""
   },
   {
-    "title": "MITIE Lab Dissection",
+    "title": "[OPT] MITIE Lab Dissection",
     "date": "10/06/2026",
     "start": "13:00",
     "end": "16:00",
@@ -2987,7 +2987,7 @@
     "block": "MGA",
     "weekNum": 24,
     "week": "Week 24",
-    "desc": "MITIE Lab Dissection",
+    "desc": "[OPT] MITIE Lab Dissection",
     "calYear": "2030",
     "mCal": "M1",
     "mand": "No",
