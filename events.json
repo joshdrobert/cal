@@ -3080,24 +3080,25 @@
     "endDate": ""
   },
   {
-    "title": "MITIE Lab Dissection",
+    "title": "[OPT] MITIE Lab Dissection",
     "date": "10/13/2026",
     "start": "13:00",
     "end": "16:00",
     "category": "Lab",
     "block": "MGA",
-    "weekNum": 21,
-    "week": "Week 21",
-    "desc": "MITIE Lab Dissection",
+    "weekNum": 25,
+    "week": "Week 25",
+    "desc": "[OPT] MITIE Lab Dissection",
     "calYear": "2030",
     "mCal": "M1",
-    "mand": "Yes",
-    "group": "Groups A&B",
+    "mand": "No",
+    "group": "Group A, Group B",
     "location": "MITIE",
     "_id": "10051226_58",
     "info": "Upper Extremity prosections",
     "presenter": "Dr. Meyer, Dr. Omole",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
