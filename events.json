@@ -11385,22 +11385,23 @@
   {
     "title": "Mass Casualty Day",
     "date": "11/20/2026",
-    "start": "06:30",
-    "end": "13:00",
+    "start": "08:00",
+    "end": "11:30",
     "category": "BLACKOUT",
     "block": "Mass Casualty Day",
-    "weekNum": 26,
-    "week": "Week 26",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "Mass Casualty Day",
     "calYear": "2029",
     "mCal": "M2",
-    "mand": "No",
-    "group": "All Students",
+    "mand": "Yes",
+    "group": "Group 1",
     "location": "",
-    "info": "",
+    "info": "Group assignments are in-progress and will be released shortly.",
     "presenter": "",
     "_id": "b94cf5c3-d0fb-4393-99d2-29a5d6abccd4",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Black Out Day",
@@ -14188,5 +14189,26 @@
     "info": "",
     "presenter": "",
     "_id": "3423044c-cfef-4422-8b8e-c83b9c5d510e"
+  },
+  {
+    "title": "Mass Casualty Day",
+    "date": "11/20/2026",
+    "endDate": "",
+    "start": "11:30",
+    "end": "15:00",
+    "allDay": false,
+    "category": "BLACKOUT",
+    "block": "",
+    "weekNum": 30,
+    "week": "Week 30",
+    "desc": "Mass Casualty Day",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "Yes",
+    "group": "Group 2",
+    "location": "",
+    "info": "Group assignments are in-progress and will be released shortly.",
+    "presenter": "",
+    "_id": "cb5da1a9-23ad-4d82-997e-f8beb5f98feb"
   }
 ]
