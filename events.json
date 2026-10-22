@@ -6178,7 +6178,7 @@
   {
     "title": "Comprehensive Exam",
     "date": "12/10/2026",
-    "start": "09:15",
+    "start": "09:30",
     "end": "10:30",
     "category": "EXAM",
     "block": "EBM",
@@ -8140,7 +8140,7 @@
     "title": "Exam #1",
     "date": "12/10/2026",
     "start": "08:00",
-    "end": "09:15",
+    "end": "09:30",
     "category": "EXAM",
     "block": "MSK",
     "weekNum": 33,
