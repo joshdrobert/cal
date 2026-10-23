@@ -11000,7 +11000,7 @@
     "endDate": "10/19/2026"
   },
   {
-    "title": "[MAND] IPER Symposium Day - BLACKOUT DAY",
+    "title": "IPER Symposium Day - BLACKOUT DAY",
     "date": "11/11/2026",
     "start": "09:00",
     "end": "13:00",
@@ -11008,7 +11008,7 @@
     "block": "IPER Symposium Day",
     "weekNum": 29,
     "week": "Week 29",
-    "desc": "[MAND] IPER Symposium Day - BLACKOUT DAY",
+    "desc": "IPER Symposium Day - BLACKOUT DAY",
     "calYear": "2029",
     "mCal": "M1",
     "mand": "Yes",
@@ -14215,5 +14215,26 @@
     "info": "Group assignments are in-progress and will be released shortly.",
     "presenter": "",
     "_id": "cb5da1a9-23ad-4d82-997e-f8beb5f98feb"
+  },
+  {
+    "title": "Blackout Day",
+    "date": "11/11/2026",
+    "endDate": "11/11/2026",
+    "start": "",
+    "end": "",
+    "allDay": true,
+    "category": "BLACKOUT",
+    "block": "IPER SYMPOSIUM",
+    "weekNum": 29,
+    "week": "Week 29",
+    "desc": "Blackout Day",
+    "calYear": "2029",
+    "mCal": "M1",
+    "mand": "Yes",
+    "group": "All Students",
+    "location": "",
+    "info": "",
+    "presenter": "",
+    "_id": "057e2cb3-4d71-491a-86c7-36a92d68f52d"
   }
 ]
