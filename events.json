@@ -14238,5 +14238,26 @@
     "info": "",
     "presenter": "",
     "_id": "057e2cb3-4d71-491a-86c7-36a92d68f52d"
+  },
+  {
+    "title": "ISA Survey Lunch",
+    "date": "11/04/2026",
+    "endDate": "",
+    "start": "12:00",
+    "end": "13:00",
+    "allDay": false,
+    "category": "Events",
+    "block": "",
+    "weekNum": 28,
+    "week": "Week 28",
+    "desc": "ISA Survey Lunch",
+    "calYear": "2029",
+    "mCal": "M2",
+    "mand": "No",
+    "group": "All Students",
+    "location": "2nd Flr Rm 216 A/B EnMed Twr",
+    "info": "RSVP by 6 pm on 11/3/2026 to reserve lunch: https://forms.gle/cHH7Lk2YnaDisco68",
+    "presenter": "",
+    "_id": "1de8399e-8991-41b1-b0cf-385c8beb00b8"
   }
 ]
