@@ -3993,9 +3993,9 @@
     "start": "09:00",
     "end": "11:00",
     "category": "Session",
-    "block": "Endo/ Repro",
-    "weekNum": 3,
-    "week": "Week 3",
+    "block": "Endo/Repro",
+    "weekNum": 28,
+    "week": "Week 28",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -4004,8 +4004,9 @@
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "_id": "12051226_11",
     "info": "Pathology -Female  Reproductive Neoplasia; Pathology - Female Repro Non-neoplastic Disorders; Pathology - Breast",
-    "presenter": "TBD",
-    "endDate": ""
+    "presenter": "Dr. Priya, Dr. Zieske",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -4033,9 +4034,9 @@
     "start": "10:00",
     "end": "11:00",
     "category": "Session",
-    "block": "Endo/ Repro",
-    "weekNum": 4,
-    "week": "Week 4",
+    "block": "Endo/Repro",
+    "weekNum": 29,
+    "week": "Week 29",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -4044,8 +4045,9 @@
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "_id": "12051226_13",
     "info": "Clinical - Fertility and Infertility; Clinical - Menstrual and endocrine disorders",
-    "presenter": "TBD",
-    "endDate": ""
+    "presenter": "Dr. Pilkinton",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -4073,9 +4075,9 @@
     "start": "09:00",
     "end": "12:00",
     "category": "Session",
-    "block": "Endo/ Repro",
-    "weekNum": 4,
-    "week": "Week 4",
+    "block": "Endo/Repro",
+    "weekNum": 29,
+    "week": "Week 29",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -4084,8 +4086,9 @@
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "_id": "12051226_15",
     "info": "Clinical - Early Pregnancy; Clinical - Labor and Delivery; Clinical - Obstetric complications",
-    "presenter": "TBD",
-    "endDate": ""
+    "presenter": "Dr. Pilkinton",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Active Learning",
@@ -4104,7 +4107,7 @@
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "_id": "12051226_16",
     "info": "Pathology - Male Genital System Disorders",
-    "presenter": "TBD",
+    "presenter": "Drs. Parikh, Zieske, and Pilkinton",
     "endDate": "",
     "allDay": false
   },
@@ -4114,9 +4117,9 @@
     "start": "09:00",
     "end": "12:00",
     "category": "Session",
-    "block": "Endo/ Repro",
-    "weekNum": 5,
-    "week": "Week 5",
+    "block": "Endo/Repro",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "Active Learning",
     "calYear": "2029",
     "mCal": "M2",
@@ -4125,8 +4128,9 @@
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "_id": "12051226_18",
     "info": "Clinical - Perinatal Nutrition; Clinical - Disorders of Newborns",
-    "presenter": "TBD",
-    "endDate": ""
+    "presenter": "Drs. Rogers, Muhsin, and Hendrickson",
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Exam #2 Check-In",
@@ -10537,8 +10541,8 @@
     "end": "10:00",
     "category": "Session",
     "block": "Endo/Repro",
-    "weekNum": 26,
-    "week": "Week 26",
+    "weekNum": 30,
+    "week": "Week 30",
     "desc": "TBL #2",
     "calYear": "2029",
     "mCal": "M2",
@@ -10546,9 +10550,10 @@
     "group": "All Students",
     "location": "2nd Flr Room 216 A/B, EnMed Twr",
     "info": "All handouts",
-    "presenter": "TBD",
+    "presenter": "Drs. Parikh and Zieske",
     "_id": "1778791089919",
-    "endDate": ""
+    "endDate": "",
+    "allDay": false
   },
   {
     "title": "Exam #2",
